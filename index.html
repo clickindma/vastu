@@ -1,0 +1,3916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/few.png">
+    <title>Spiritual Harmony - Vaastu, Numerology & Astrology Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #800000;
+            --background: #edc9af;
+            --icons: #a9a9a9;
+            --accent: #008b8b;
+            --deep-red: #C62828;
+            --gold: #FFD700;
+            --white: #FFFFFF;
+            --charcoal: #333333;
+            --cream: #FFF9C4;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background);
+            color: var(--charcoal);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Lora', serif;
+        }
+
+        .bg-primary {
+            background-color: var(--primary);
+        }
+
+        .bg-accent {
+            background-color: var(--accent);
+        }
+
+        .bg-deep-red {
+            background-color: var(--deep-red);
+        }
+
+        .bg-cream {
+            background-color: var(--cream);
+        }
+
+        .text-primary {
+            color: var(--primary);
+        }
+
+        .text-accent {
+            color: var(--accent);
+        }
+
+        .text-gold {
+            color: var(--gold);
+        }
+
+        .border-primary {
+            border-color: var(--primary);
+        }
+
+        .border-accent {
+            border-color: var(--accent);
+        }
+
+        /* Animated elements */
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translate(0, 0px); }
+            50% { transform: translate(0, 15px); }
+            100% { transform: translate(0, 0px); }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .rotate-slow {
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* 3D Effects */
+        .card-3d {
+            transition: transform 0.5s ease;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .card-3d:hover {
+            transform: translateY(-10px) rotateX(5deg);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-divider {
+            height: 6px;
+            background: linear-gradient(90deg, var(--primary), var(--gold), var(--accent), var(--gold), var(--primary));
+            margin: 3rem 0;
+        }
+
+        .masked-image {
+            -webkit-mask-image: radial-gradient(circle at center, black 50%, transparent 80%);
+            mask-image: radial-gradient(circle at center, black 50%, transparent 80%);
+        }
+
+       
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--cream);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 10px;
+        }
+
+   
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--gold);
+            bottom: -2px;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+       
+        .hero-text {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease forwards 0.5s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+       
+        .service-icon {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .service-icon::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border: 2px solid var(--gold);
+            border-radius: 50%;
+            opacity: 0;
+            transform: scale(1.2);
+            transition: all 0.3s ease;
+        }
+
+        .service-icon:hover::before {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+       
+        input, select, textarea {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(0, 139, 139, 0.2);
+        }
+
+        .btn-primary {
+            background-color: var(--deep-red);
+            color: var(--white);
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary);
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary:active {
+            transform: translateY(1px);
+        }
+
+        
+        .testimonial-container {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .testimonial-slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        
+        .video-container {
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .video-container:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+       
+        .blog-card {
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .blog-card img {
+            transition: all 0.5s ease;
+        }
+
+        .blog-card:hover img {
+            transform: scale(1.1);
+        }
+
+      
+        .animated-bg {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .animated-bg::before {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            top: -25%;
+            left: -25%;
+            background: radial-gradient(circle, rgba(237,201,175,0.2) 0%, rgba(128,0,0,0.1) 50%, rgba(0,139,139,0.2) 100%);
+            animation: rotate 30s linear infinite;
+            z-index: -1;
+        }
+
+       
+        .particles-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            background-color: rgba(255, 215, 0, 0.6);
+            border-radius: 50%;
+            opacity: 0;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) translateX(0);
+                opacity: 0;
+            }
+            20% {
+                opacity: 0.8;
+            }
+            80% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(-100px) translateX(20px);
+                opacity: 0;
+            }
+        }
+
+     
+        .chat-widget {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .chat-widget:hover {
+            transform: scale(1.1);
+        }
+
+        
+        .timeline {
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 3px;
+            background-color: var(--primary);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-content {
+            position: relative;
+            width: 45%;
+            padding: 20px;
+            background-color: var(--white);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: auto;
+        }
+
+        .timeline-content::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background-color: var(--gold);
+            border-radius: 50%;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content::before {
+            left: -30px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content::before {
+            right: -30px;
+        }
+
+        /* Map Upload */
+        .upload-area {
+            border: 2px dashed var(--primary);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .upload-area:hover {
+            border-color: var(--accent);
+            background-color: rgba(255, 255, 255, 0.9);
+            transform: scale(1.02);
+        }
+
+        /* Consultation Form */
+        .form-3d {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .form-3d:hover {
+            transform: rotateX(2deg) rotateY(2deg);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contact Info */
+        .contact-method {
+            transition: all 0.3s ease;
+        }
+
+        .contact-method:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        .footer-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .footer-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background-color: var(--gold);
+            bottom: -2px;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+
+        .footer-link:hover::after {
+            width: 100%;
+        }
+
+        /* Spiritual Symbols */
+        .spiritual-symbol {
+            display: inline-block;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+
+        .spiritual-symbol:hover {
+            opacity: 1;
+            transform: rotate(10deg) scale(1.1);
+        }
+
+        /* Mobile Nav */
+        .mobile-nav-toggle {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-nav-toggle {
+                display: block;
+            }
+
+            .desktop-nav {
+                display: none;
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background-color: var(--cream);
+                padding: 1rem;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+            }
+
+            .desktop-nav.active {
+                display: block;
+            }
+            
+            .timeline::before {
+                left: 30px;
+            }
+            
+            .timeline-content {
+                width: calc(100% - 60px);
+                margin-left: 60px !important;
+            }
+            
+            .timeline-item:nth-child(odd) .timeline-content::before,
+            .timeline-item:nth-child(even) .timeline-content::before {
+                left: -30px;
+                right: auto;
+            }
+        }
+
+                /* Optional: Add smooth dropdown transition */
+    .dropdown-menu {
+      transition: all 0.3s ease-in-out;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .group:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0.25rem);
+    }
+
+
+    .vastu-section {
+  background: #edc9af;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+
+  .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #800000 0%, #efe0d1 100%);
+        }
+        .numerology-card {
+            background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .result-card {
+            background-color: #800000;
+        }
+        .nav-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+
+
+.section-title {
+  
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.divider {
+  font-size: 24px;
+  color: #f4a259;
+  margin: 10px 0 20px;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  color: #000000;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.vastu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.vastu-card {
+  background: #edc9af;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border: 3px solid rgb(227, 141, 103);
+}
+
+.vastu-card:hover {
+
+    background-color: #b40000;
+  transform: translateY(-5px);
+}
+
+
+
+.vastu-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.vastu-card h3 {
+  font-size: 18px;
+  margin: 15px 0 10px;
+  color: #ffffff;
+}
+
+.vastu-card p {
+  font-size: 14px;
+  color: #fffcfc;
+  padding: 0 15px 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .vastu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .vastu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+  /* Wrapper styling */
+#vastu-map {
+  background: #edc9af;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border: 2px solid #b7a69a;
+  transition: all 0.3s ease;
+}
+
+/* Input and select fields */
+#vastu-map input[type="text"],
+#vastu-map input[type="email"],
+#vastu-map select,
+#vastu-map textarea {
+  border: 1px solid #c5a79e;
+  background-color: #fdf8f6;
+  color: #4b2e2e;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+#vastu-map input:focus,
+#vastu-map textarea:focus,
+#vastu-map select:focus {
+  border-color: #8b0000;
+  outline: none;
+  box-shadow: 0 0 5px rgba(139, 0, 0, 0.4);
+}
+
+/* File upload box */
+#vastu-map .border-dashed {
+  background-color: rgba(245, 240, 235, 0.5);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#vastu-map .border-dashed:hover {
+  border-color: #8b0000;
+  background-color: rgba(245, 240, 235, 0.8);
+}
+
+/* Upload icon */
+#vastu-map i.fas.fa-cloud-upload-alt {
+  color: #8b0000;
+  transition: 0.3s ease;
+}
+
+#vastu-map i.fas.fa-cloud-upload-alt:hover {
+  transform: scale(1.1);
+  color: #6b0d0d;
+}
+
+/* Submit button */
+#vastu-map .glowing-btn {
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(128, 0, 128, 0.5);
+  transition: 0.3s ease;
+}
+
+#vastu-map .glowing-btn:hover {
+  box-shadow: 0 0 15px rgba(128, 0, 128, 0.7);
+  transform: translateY(-2px);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 2s ease-in-out infinite;
+}
+
+
+.image-overlay-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 130px;
+  overflow: hidden;
+  z-index: 999;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.image-overlay-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(85, 45, 45, 0.6), rgba(0, 0, 0, 0.4));
+  z-index: 1;
+}
+
+.image-overlay-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+.liquid-morph-container {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+  height: auto;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.liquid-morph-element {
+  min-width: 240px;
+  width: 100%;
+  background: linear-gradient(135deg, #800000, #008b8b);
+  display: flex;
+  padding: 10px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.liquid-morph-element span {
+  color: #fff;
+  font-size: 17px;
+  position: relative;
+  z-index: 2;
+}
+
+.liquid-morph-element::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(
+    #0ff 0deg, 
+    #0a2342 120deg, 
+    #0ff 240deg
+  );
+  transition: all 0.6s ease;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.liquid-morph-element:hover {
+  border-radius: 50px;
+  transform: rotate(7deg);
+}
+
+.liquid-morph-element:hover::before {
+  opacity: 0.5;
+  transform: scale(2);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .liquid-morph-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .liquid-morph-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .liquid-morph-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .liquid-morph-element {
+    min-width: auto;
+    font-size: 15px;
+    padding: 12px;
+    height: auto;
+    white-space: normal;
+  }
+
+  .liquid-morph-element span {
+    font-size: 15px;
+    text-align: center;
+    word-break: break-word;
+  }
+}
+
+
+ .industrial-vaastu {
+  padding: 100px 10%;
+  background-color: var(--primary);
+  color: white;
+}
+
+.industrial-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+}
+
+.industrial-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.industrial-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.industrial-text p {
+  margin-bottom: 30px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.industrial-image {
+  flex: 1;
+  position: relative;
+  animation: float 3s ease-in-out infinite;
+  min-width: 280px;
+}
+
+.industrial-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Floating animation */
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Medium screens: Tablets */
+@media (max-width: 1024px) {
+  .industrial-vaastu {
+    padding: 80px 8%;
+  }
+
+  .industrial-text h2 {
+    font-size: 30px;
+  }
+
+  .industrial-text p {
+    font-size: 16px;
+  }
+
+  .industrial-content {
+    gap: 30px;
+  }
+}
+
+/* Small screens: Mobile */
+@media (max-width: 768px) {
+  .industrial-vaastu {
+    padding: 60px 5%;
+  }
+
+  .industrial-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .industrial-text h2 {
+    font-size: 26px;
+  }
+
+  .industrial-text p {
+    font-size: 15px;
+  }
+
+  .industrial-image {
+    animation: none; /* disable animation on small screens if needed */
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .industrial-vaastu {
+    padding: 40px 4%;
+  }
+
+  .industrial-text h2 {
+    font-size: 22px;
+  }
+
+  .industrial-text p {
+    font-size: 14px;
+  }
+}
+
+
+.vaastu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 boxes per row for desktop */
+    gap: 20px;
+    padding: 20px;
+}
+
+.vaastu-item {
+    width: 100%;
+    background: #800000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.vaastu-item img {
+    width: 100%;
+    height: 370px; /* Larger image */
+    object-fit: cover;
+}
+
+.vaastu-item .direction {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #8B0000;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    z-index: 2;
+}
+
+.vaastu-item:hover {
+    transform: translateY(-5px);
+}
+
+.vaastu-item .content {
+    padding: 15px;
+}
+
+.vaastu-item h3 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.vaastu-item p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* 🔧 Responsive for Tablets and Mobile */
+@media (max-width: 1024px) {
+    .vaastu-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .vaastu-grid {
+        grid-template-columns: 1fr; /* 1 per row on mobile */
+    }
+
+    .vaastu-item img {
+        height: 250px; /* Adjust height for mobile */
+    }
+
+    .vaastu-item h3 {
+        font-size: 18px;
+    }
+
+    .vaastu-item p {
+        font-size: 13px;
+    }
+}
+
+        h1 {
+            color: #8B0000;
+            text-align: center;
+        }
+        p.subtitle {
+            text-align: center;
+            color: #666;
+        }
+        .tabs {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .tabs button {
+            padding: 10px 20px;
+            margin: 0 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .tabs button.active {
+            background-color: #8B0000;
+            color: white;
+        }
+        .zodiac-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .zodiac-item {
+            text-align: center;
+            cursor: pointer;
+        }
+        .zodiac-item .icon {
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border: 2px solid #8B0000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #8B0000;
+            margin: 0 auto;
+        }
+        .zodiac-item .icon.active {
+            background-color: #8B0000;
+            color: white;
+        }
+        .zodiac-item span {
+            display: block;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+    .horoscope-details {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #8B0000;
+    color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.horoscope-details .icon {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #8B0000;
+    flex-shrink: 0;
+}
+
+.horoscope-details .content {
+    flex: 1;
+    min-width: 0;
+}
+
+.horoscope-details .content h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.horoscope-details .content p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.horoscope-details .content button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #8B0000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    .horoscope-details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .horoscope-details .icon {
+        margin-bottom: 15px;
+    }
+
+    .horoscope-details .content h2 {
+        font-size: 20px;
+    }
+
+    .horoscope-details .content p {
+        font-size: 14px;
+    }
+
+    .horoscope-details .content button {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+        .vaastu-item a{
+            text-decoration: none;
+        }
+.logo {
+            padding-left: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Aligns logo to the left */
+            background: none; /* Explicitly remove any background */
+            margin: 20px 0; /* Adds vertical spacing */
+        }
+        .logo img {
+            width: 130px; /* Fixed width for the logo */
+            height: auto; /* Maintains aspect ratio */
+            transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover effects */
+            border-radius: 10px; /* Slight rounding for a modern look */
+       
+            background: transparent; /* Ensure the image itself has no background */
+        }
+  .loader img {
+  width: 150px;
+  height: auto;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotateY(0deg);}
+  100% { transform: rotateY(360deg);}
+}
+
+
+.main{
+  width:330px;
+  height:330px;
+  border:1px solid #CCC;
+  position:absolute;
+  top:0; bottom:0; left:0;right:0;
+  margin:auto;
+  border-radius:50%; 
+}
+
+.circle{
+  width:30px;
+  height:30px;
+  background:cyan;
+  border-radius:50%;
+  position:absolute;
+  top:0; bottom:0; left:0;right:0;
+  overflow:hidden;
+  margin:auto;
+  animation: circle 6s linear infinite;
+}
+
+@keyframes circle{
+  0%{
+    transform:rotate(0deg)
+              translate(-165px)
+              rotate(0deg);
+  
+  }
+  100%{
+    transform:rotate(360deg)
+              translate(-165px)
+              rotate(-360deg);
+  }
+}
+
+
+
+ .package-section {
+  padding: 50px 20px;
+  background: #f7f7f7;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.package-box {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.package-box:hover {
+  transform: translateY(-6px);
+}
+
+.image-area {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px;
+  color: #fff;
+}
+
+.image-area::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* dark overlay */
+  z-index: 0;
+}
+
+.package-title {
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 600;
+  z-index: 1;
+  margin-top: 5px;
+}
+
+.price-tag {
+  position: relative;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffd700;
+  z-index: 1;
+}
+
+.package-content {
+  padding: 20px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.package-content p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.package-content a {
+    text-decoration: none;
+}
+
+.book-btn {
+  display: inline-block;
+  background: #8B0000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+
+/* Chat Toggle Button Styles */
+.chat-toggle-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #800000; /* Saffron/Orange */
+    color: white;
+    border-radius: 50%; /* Makes it round */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px; /* Adjust icon size */
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it's on top */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.chat-toggle-button:hover {
+    transform: scale(1.1);
+    background-color: #800008; /* Darker on hover */
+}
+
+/* Base styles remain mostly unchanged except minor improvements */
+
+.chat-widget-container {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 100%;
+    max-width: 380px;
+    height: 70vh;
+    max-height: 550px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    z-index: 999;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    overflow: hidden;
+}
+
+.chat-widget-container.show {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Chat popup for small screen support */
+@media (max-width: 480px) {
+    .chat-widget-container {
+        width: 95vw;
+        right: 10px;
+        bottom: 70px;
+        height: 85vh;
+        max-height: none;
+        border-radius: 8px;
+    }
+
+    .chat-toggle-button {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        bottom: 15px;
+        right: 10px;
+    }
+
+    .chat-header h2 {
+        font-size: 1em;
+    }
+
+    .chat-header p {
+        font-size: 0.75em;
+    }
+
+    #userInput {
+        font-size: 0.8em;
+    }
+
+    #sendButton {
+        font-size: 0.8em;
+    }
+
+    .chat-messages {
+        padding: 10px;
+    }
+
+    .message {
+        font-size: 0.8em;
+    }
+}
+
+/* Support for ultra-small devices (320px wide) */
+@media (max-width: 360px) {
+    .chat-widget-container {
+        width: 95vw;
+        right: 5px;
+        bottom: 65px;
+        height: 90vh;
+    }
+
+    .chat-toggle-button {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .chat-header h2 {
+        font-size: 0.95em;
+    }
+
+    .chat-header p {
+        font-size: 0.7em;
+    }
+
+    .footer-text {
+        font-size: 0.6em;
+    }
+}
+
+/* Chat Container (inside widget) Styles */
+.chat-container {
+    width: 100%;
+    height: 100%; /* Make it fill the widget container */
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; /* Ensure background for chat container itself */
+    border-radius: 10px; /* Match parent's rounding if any part is visible */
+    overflow: hidden; /* Ensure children are clipped if they try to overflow */
+}
+
+.chat-header {
+    background-color: #800000;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    flex-shrink: 0; /* Prevent header from shrinking */
+}
+
+.chat-header h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.chat-header p {
+    margin: 3px 0 0;
+    font-size: 0.8em;
+    opacity: 0.9;
+}
+
+.chat-messages {
+    flex-grow: 1; /* Allow this to take up available space */
+    padding: 15px;
+    overflow-y: auto; /* Enable vertical scrolling for this area */
+    min-height: 0; /* CRUCIAL for flex item with overflow to shrink and scroll correctly */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f9f9f9; /* Light background for message area */
+}
+
+.message {
+    padding: 8px 12px;
+    border-radius: 15px;
+    max-width: 85%;
+    word-wrap: break-word; /* or overflow-wrap: break-word; */
+    line-height: 1.4;
+    font-size: 0.9em;
+}
+
+.user-message {
+    background-color: #e1f5fe;
+    color: #333;
+    align-self: flex-end;
+    border-bottom-right-radius: 5px;
+}
+
+.ai-message {
+    background-color: #e9f5e9; /* Slightly different light green */
+    color: #333;
+    align-self: flex-start;
+    border-bottom-left-radius: 5px;
+}
+
+.ai-message .greeting {
+    font-weight: bold;
+    color: #800000;
+    display: block; /* Ensure greeting is on its own line */
+    margin-bottom: 4px;
+}
+
+.ai-message .closing {
+    font-style: italic;
+    color: #555;
+    margin-top: 6px;
+    display: block;
+    font-size: 0.9em;
+}
+
+.chat-input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #e0e0e0;
+    background-color: #fff; /* White background for input area */
+    flex-shrink: 0; /* Prevent input area from shrinking */
+}
+
+#userInput {
+    flex-grow: 1;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 8px;
+    font-size: 0.9em;
+}
+
+#sendButton {
+    padding: 8px 15px;
+    background-color: #800000;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+#sendButton:hover {
+    background-color: #800008;
+}
+
+.footer-text {
+    text-align: center;
+    padding: 8px;
+    font-size: 0.7em;
+    color: #777;
+    background-color: #f0f0f0;
+    border-top: 1px solid #e0e0e0;
+    flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+/* For smaller screens */
+@media (max-width: 480px) {
+    .chat-widget-container {
+        max-width: calc(100vw - 30px); /* Take more width, with some margin */
+        right: 15px; /* Adjust position slightly */
+        bottom: 75px; /* Adjust if toggle button size changes */
+        height: 65vh; /* Adjust height for smaller screens */
+        max-height: 450px;
+    }
+    .chat-toggle-button {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+.chat-popup-message {
+            position: fixed;
+            bottom: 90px;
+            right: 30px;
+            background-color: #800000;
+            color: #fff;
+            padding: 8px 14px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            font-size: 14px;
+            animation: fadeOutPopup 5s forwards;
+            z-index: 1001;
+        }
+
+        @keyframes fadeOutPopup {
+            0% { opacity: 1; transform: translateY(0); }
+            80% { opacity: 1; }
+            100% { opacity: 0; transform: translateY(-10px); }
+        }
+
+
+.compass-container {
+      position: relative;
+      width: 320px;
+      height: 320px;
+      max-width: 90vw;
+      max-height: 90vw;
+    }
+    .compass-img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      transition: transform 0.3s cubic-bezier(.4,2.2,.2,1);
+      will-change: transform;
+      pointer-events: none;
+      user-select: none;
+    }
+    .heading-value {
+      margin-top: 20px;
+      font-size: 1.2em;
+      font-family: monospace;
+      color: #333;
+    }
+
+
+    .compass-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 20px auto;
+        }
+
+        .compass-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /* background-color: #000; */
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .compass-dial {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><circle cx="250" cy="250" r="245" fill="none" stroke="%234a6b82" stroke-width="1" /></svg>');
+            background-size: contain;
+            transition: transform 0.1s ease-out;
+        }
+
+        .degree-markings {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+        }
+
+        .degree-markings::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 15px;
+            width: 1px;
+            background-color: #4a6b82;
+            transform: translateX(-50%);
+        }
+
+        .cardinal-directions {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .direction {
+            position: absolute;
+            font-size: 16px;
+            font-weight: bold;
+            color: #4a6b82;
+        }
+
+        .direction.n {
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .direction.e {
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+
+        .direction.s {
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .direction.w {
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+        }
+
+        .direction.ne {
+            top: 25%;
+            right: 25%;
+            transform: translate(50%, -50%);
+        }
+
+        .direction.se {
+            bottom: 25%;
+            right: 25%;
+            transform: translate(50%, 50%);
+        }
+
+        .direction.sw {
+            bottom: 25%;
+            left: 25%;
+            transform: translate(-50%, 50%);
+        }
+
+        .direction.nw {
+            top: 25%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+        }
+
+        .compass-needle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px;
+            height: 140px;
+            margin-left: -5px;
+            margin-top: -70px;
+            background: linear-gradient(to bottom, #ff0000 0%, #ff0000 50%, #0066cc 50%, #0066cc 100%);
+            border-radius: 50% 50% 50% 50% / 10% 10% 10% 10%;
+            transform-origin: center center;
+            transition: transform 0.1s ease-out;
+            z-index: 10;
+        }
+
+        .compass-needle::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 16px;
+            height: 16px;
+            background-color: #ccc;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        }
+
+        .compass-inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 60%;
+            height: 60%;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid #4a6b82;
+            z-index: 2;
+        }
+
+        .compass-inner::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px dotted #4a6b82;
+        }
+
+        .compass-rays {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 90%;
+            height: 90%;
+            transform: translate(-50%, -50%);
+        }
+
+        .ray {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 45%;
+            height: 1px;
+            background-color: #800008;
+            transform-origin: left center;
+        }
+
+        .outer-ring {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 2px solid #800000;
+        }
+
+        .degree-numbers {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            font-size: 12px;
+            color: #800000;
+        }
+
+        .degree-number {
+            position: absolute;
+            width: 30px;
+            text-align: center;
+            transform-origin: center 150px;
+        }
+
+        .heading-display {
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .info {
+            margin-top: 80px;
+            text-align: center;
+            max-width: 80%;
+            color: #ddd;
+        }
+        
+        #compass {
+  transition: transform 0.2s linear;
+}
+
+
+    </style>
+</head>
+<body>
+
+  <!-- Loader -->
+<div class="loader" id="loader" style="
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+">
+  <img src="./images/few.png" alt="AV Logo Loader" style="width: 120px; height: auto;">
+</div>
+
+<!-- Website Content -->
+<div id="content" style="display: none;">
+
+    <!-- Header -->
+    <div class="menu-bar" id="menuBar" style="padding: 2px;">
+        <div class="logo" style="padding-left: 30px;">
+          <!-- Replace with actual logo path -->
+          <img src="./images/logo1.png" alt="Company Logo">
+        </div>
+        
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        
+        <ul class="nav-menu" style="padding-left: 20px;">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a>
+            <div class="sub-menu-1">
+              <ul>
+               
+               
+                <li><a href="blogs.html">Blogs</a></li>
+                <li class="hover-me"><a href="media.html">Media</a>
+    
+                  <div class="sub-menu-2">
+                    <ul>
+                      <li><a href="press.html">Press Releases</a></li>
+                      <li><a href="media.html">Media</a></li>
+                    </ul>
+                  </div>
+    
+                </li>
+                
+              </ul>
+              
+            </div>
+          </li>
+          <li><a href="astro.html">Vaastu Shastra</a>
+            <div class="sub-menu-1">
+              <ul>
+                <li class="hover-me"><a href="residential.html">Residential</a>
+                  <div class="sub-menu-2">
+                    <ul>
+                      <li><a href="house.html">House</a></li><br>
+                      <li><a href="flats.html">Flats</a></li>
+                      <li><a href="appartments.html">Apartments</a></li>
+                      <li><a href="farmhouse.html">Farmhouse</a></li>
+                    </ul>
+                  </div>
+                </li>
+                
+                <li class="hover-me"><a href="industrial.html">Industrial</a>
+                  <div class="sub-menu-2">
+                    <ul>
+                      <li><a href="factory.html">Factory</a></li>
+                      <li><a href="warehouse.html">Warehouse</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="hover-me"><a href="commercial.html">Commercial</a>
+                  <div class="sub-menu-2">
+                    <ul>
+                      <li><a href="office.html">Office</a></li>
+                      <li><a href="shop.html">Showroom</a></li>
+                      <li><a href="restaurent.html">Restaurant</a></li>
+                    </ul>
+                  </div>
+                </li>
+               
+              </ul>
+                <li class="hover-me"><a href="astro vastru.html">Astro Vastru</a></li>
+         
+                                 
+                <li class="hover-me"><a href="numerology.html">Numerology</a>
+                
+                  
+                </li>
+              
+         <li class="hover-me"><a href="https://magenta-shark-147966.hostingersite.com/">Vaastu Shop</a> </li>
+    
+         
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    
+        <div class="menu-actions" style="padding-right: 40px;">
+          <a href="book.html"><button class="consult-btn">Book Consultation</button></a>
+          <a href="vaastu.html"><button class="report-btn">Get Vaastu Report</button></a> 
+        </div>
+      </div>
+    
+      <script>
+        function toggleMenu() {
+          document.getElementById("menuBar").classList.toggle("responsive");
+        }
+      </script>
+        
+        
+        <!-- Font Awesome CDN (required for icons) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        
+        <!-- JavaScript to toggle mobile menu -->
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menu-toggle");
+            const mobileMenu = document.getElementById("mobile-menu");
+        
+            menuToggle.addEventListener("click", () => {
+              mobileMenu.classList.toggle("hidden");
+            });
+          });
+        </script>
+          
+      </header>
+    
+      
+
+
+      
+    <!-- Hero Section -->
+    <section id="home" class="relative py-24 px-4 md:px-12 animated-bg overflow-hidden">
+
+         <!-- <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+    <source src="./images/home.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video> -->
+
+        <div class="particles-container"></div>
+      
+        <div class="container mx-auto relative z-10">
+          <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+            
+            <!-- Left Content -->
+           <div class="md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left px-5 md:px-10">
+  <h1 class="text-5xl md:text-6xl font-bold mb-6 hero-text text-primary text-left" style="color:#800000;">
+  <div style="display: block;">
+   Optimize Your Industrial Space with Ancient Vaastu Wisdom
+  </div>
+  <div style="display: block; color: #17d430;">
+    Harmony
+  </div>
+</h1>
+  <p class="text-xl mb-8 hero-text delay-200 max-w-xl" style="color:#800000;">
+    Harness the ancient wisdom of Vaastu Shastra, Numerology, and Astrology to transform your life and create balance.
+  </p>
+  <div class="hero-text delay-400">
+    <a href="book.html" class="btn-primary px-8 py-4 rounded-full text-lg font-semibold inline-block" style="background-color: #800000;">
+      Book a Consultation
+    </a>
+  </div>
+</div>
+
+      
+            <!-- Right Compass -->
+               <!-- <div class="w-full md:w-1/2 flex justify-center items-center bg-cover bg-center bg-no-repeat min-h-[500px] md:min-h-[500px]" style="background: url('./images/compass\ circle.gif')center center/cover; width: 570px; padding: 30px;"> -->
+                <div id="compassContainer" style="width:200px; margin:auto;">
+                    <img src="./images/compass (1).png" id="compass" style="width:100%; transform-origin:50% 50%;">
+                    <div style="text-align:center; margin-top:10px;">
+                      <span id="direction">Direction: --°</span>
+                    </div>
+                  </div>
+                  
+    
+  
+          </div>
+        </div>
+      </section>
+      
+      
+      
+
+
+
+ <div class="section-divider"></div>
+
+    <!-- Services Overview -->
+
+
+      <!-- <section class="services-section">
+        <h1>Our Spiritual Services</h1>
+        <p>Discover the perfect balance in your life with our comprehensive spiritual guidance services, tailored to your unique needs.</p>
+        <div class="services-container">
+           <a href="astro.html"><div class="service-card">
+                <div class="service-header vastu">
+                    <i class="fas fa-home"></i> Vastu Shastra
+                </div>
+                <div class="service-content">
+                    <p>Ancient architectural science to harmonize living spaces with nature’s five elements for prosperity and well-being.</p>
+                    <ul>
+                        <li>Residential Vastu</li>
+                        <li>Commercial Vastu</li>
+                        <li>Industrial Vastu</li>
+                    </ul>
+                    <a href="astro.html" class="learn-more-btn">Learn More</a>
+                </div>
+            </div></a>
+            <a href="numerology.html"><div class="service-card">
+                <div class="service-header numerology">
+                    <i class="fas fa-calculator"></i> Numerology
+                </div>
+                <div class="service-content">
+                    <p>Discover the mystical relationship between numbers and events in your life to reveal your true potential.</p>
+                    <ul>
+                        <li>Name Correction</li>
+                        <li>Lucky Numbers</li>
+                        <li>Life Path Analysis</li>
+                    </ul>
+                    <a href="numerology.html" class="learn-more-btn">Learn More</a>
+                </div>
+            </div></a>
+            <a href="astrology pre.html"><div class="service-card">
+                <div class="service-header astrology">
+                    <i class="fas fa-star"></i> Astrology
+                </div>
+                <div class="service-content">
+                    <p>Ancient wisdom that studies celestial bodies’ movements and their influence on human lives and behavior.</p>
+                    <ul>
+                        <li>Kundli Analysis</li>
+                        <li>Horoscope Reading</li>
+                        <li>Remedial Solutions</li>
+                    </ul>
+                    <a href="astrology pre.html" class="learn-more-btn">Learn More</a>
+                </div>
+            </div></a>
+        </div>
+    </section> -->
+
+
+     <section class="industrial-vaastu">
+        <div class="industrial-content">
+            <div class="industrial-text">
+                <h2>Commercial And Industrial Vaastu</h2>
+                <p>The average business spends significant resources on operational efficiency. Vaastu Industrial understands the vitality of your workspace for your success. Take advantage of our Vaastu consultation regarding various aspects of your industrial setup.</p>
+                <button class="cta-button">Book Consultation</button>
+            </div>
+            <div class="industrial-image">
+                <img src="./images/commercials.gif" alt="Industrial Vaastu">
+            </div>
+        </div>
+    </section>
+    <br>
+
+
+ 
+
+
+    <!-- <section class="py-16 px-4">
+        
+        <div class="container mx-auto text-center" style="max-width: 1200px;">
+            <h2 class="text-4xl font-bold mb-4 text-primary">Our Spiritual Services</h2>
+            <p class="text-lg mb-12 max-w-3xl mx-auto">Discover the perfect balance in your life with our comprehensive spiritual guidance services, tailored to your unique needs.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+                <div class="card-3d bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48 bg-accent relative overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-home text-8xl text-white opacity-70"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 -to-t from-white p-4">
+                            <h3 class="text-2xl font-bold text-primary">Vaastu Shastra</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="mb-4">Ancient architectural science to harmonize living spaces with nature's five elements for prosperity and wellbeing.</p>
+                        <ul class="text-left mb-6 space-y-2">
+                            <li><i class="fas fa-check text-accent mr-2"></i> Residential Vaastu</li>
+                            <li><i class="fas fa-check text-accent mr-2"></i> Commercial Vaastu</li>
+                            <li><i class="fas fa-check text-accent mr-2"></i> Industrial Vaastu</li>
+                        </ul>
+                        <a href="astro.html" class="btn-primary px-6 py-2 rounded-full inline-block text-sm font-semibold">Learn More</a>
+                    </div>
+                </div>
+                
+               
+                <div class="card-3d bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48 bg-primary relative overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-sort-numeric-up text-8xl text-white opacity-70"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 -to-t from-white p-4">
+                            <h3 class="text-2xl font-bold text-primary" style="color: #ff0000;">Numerology</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="mb-4">Discover the mystical relationship between numbers and events in your life to reveal your true potential.</p>
+                        <ul class="text-left mb-6 space-y-2">
+                            <li><i class="fas fa-check text-accent mr-2"></i> Name Correction</li>
+                            <li><i class="fas fa-check text-accent mr-2"></i> Lucky Numbers</li>
+                            <li><i class="fas fa-check text-accent mr-2"></i> Life Path Analysis</li>
+                        </ul>
+                        <a href="numerology.html" class="btn-primary px-6 py-2 rounded-full inline-block text-sm font-semibold">Learn More</a>
+                    </div>
+                </div>
+                
+               
+                <div class="card-3d bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48 bg-deep-red relative overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-star text-8xl text-white opacity-70"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 -to-t from-white p-4">
+                            <h3 class="text-2xl font-bold text-primary">Astrology</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="mb-4">Ancient wisdom that studies celestial bodies' movements and their influence on human lives and behavior.</p>
+                        <ul class="text-left mb-6 space-y-2">
+                            <li><i class="fas fa-check text-accent mr-2"></i> Kundli Analysis</li>
+                            <li><i class="fas fa-check text-accent mr-2"></i> Horoscope Reading</li>
+                            <li><i class="fas fa-check text-accent mr-2"></i> Remedial Solutions</li>
+                        </ul>
+                        <a href="astrology pre.html" class="btn-primary px-6 py-2 rounded-full inline-block text-sm font-semibold">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+
+    <!-- <div class="card-grid">
+        <div class="card">
+          <div class="card-icon"><i class="fa fa-child"></i></div>
+          <h4>Birth Journal</h4>
+          <p>There are many variations of passages of Lorem Ipsum available</p>
+          <a href="#">READ MORE</a>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fa fa-compass"></i></div>
+          <h4>Vastu Shastra</h4>
+          <p>There are many variations of passages of Lorem Ipsum available</p>
+          <a href="#">READ MORE</a>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fa fa-user-circle"></i></div>
+          <h4>Face Reading</h4>
+          <p>There are many variations of passages of Lorem Ipsum available</p>
+          <a href="#">READ MORE</a>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fa fa-book"></i></div>
+          <h4>Lal Kitab</h4>
+          <p>There are many variations of passages of Lorem Ipsum available</p>
+          <a href="#">READ MORE</a>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fa fa-circle-o"></i></div>
+          <h4>Crystal Ball</h4>
+          <p>There are many variations of passages of Lorem Ipsum available</p>
+          <a href="#">READ MORE</a>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fa fa-sun-o"></i></div>
+          <h4>Kundli Dosh</h4>
+          <p>There are many variations of passages of Lorem Ipsum available</p>
+          <a href="#">READ MORE</a>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fa fa-heart"></i></div>
+          <h4>Matrimony</h4>
+          <p>There are many variations of passages of Lorem Ipsum available</p>
+          <a href="#">READ MORE</a>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fa fa-calendar"></i></div>
+          <h4>Year Analysis</h4>
+          <p>There are many variations of passages of Lorem Ipsum available</p>
+          <a href="#">READ MORE</a>
+        </div>
+      </div> -->
+
+    <div class="section-divider"></div>
+
+
+
+  <section class="vastu-section">
+  <div class="container mx-auto text-center" style="max-width: 1400px;">
+    <h2 class="section-title">Commercial And Industrial Vastu</h2>
+    <div class="divider"><span>✦</span></div>
+    
+ <div class="vaastu-grid">
+            <div class="vaastu-item">
+                 <a href="industrial & plants.html"><img src="./images/industries.jpg" alt="Living Room"></a>
+                 <a href="industrial & plants.html"><div class="direction">West</div></a>
+                <div class="content">
+                     <a href="industrial & plants.html"><h3>Vaastu for Industrial & Plants</h3></a>
+                     <a href="industrial & plants.html"><p>For industrial setups, machinery should ideally be placed in the south or west zones to promote strength and operational efficiency. </p></a>
+                </div>
+            </div>
+            <div class="vaastu-item">
+                 <a href="warehouse.html"><img src="./images/warehouses.jpg" alt="Kitchen"></a>
+                 <a href="warehouse.html"><div class="direction">South-East</div></a>
+                <div class="content">
+                     <a href="warehouse.html"><h3>Vaastu For Warehouse</h3></a>
+                     <a href="warehouse.html"><p>In a warehouse, the entrance should ideally be in the north or east direction to ensure smooth operations and a steady inflow of goods.  </p></a>
+                    
+                </div>
+            </div>
+            <div class="vaastu-item">
+                 <a href="malls.html"><img src="./images/mall.jpg" alt="Master Bedroom"></a>
+                 <a href="malls.html"><div class="direction">South-West</div></a>
+                <div class="content">
+                     <a href="malls.html"><h3>Vaastu For Malls</h3></a>
+                     <a href="malls.html"><p>The main entrance of the mall should ideally face east or north for success and footfall. Shops selling fire elements like electronics or restaurants should be in the south-east zone.</p></a>
+                </div>
+            </div>
+            <div class="vaastu-item">
+                 <a href="factory.html"><img src="./images/factories.jpg" alt="Study Room"></a>
+                 <a href="factory.html"><div class="direction">East</div></a>
+                <div class="content">
+                     <a href="factory.html"><h3>Vaastu for Factory</h3></a>
+                     <a href="factory.html"><p>In a factory, production units should be in the south or west directions. Raw materials should be stored in the south-west corner</p></a>
+                </div>
+            </div>
+            <div class="vaastu-item">
+                 <a href="hospitals.html"><img src="./images/hospitals.jpg" alt="Home Entrance"></a>
+                 <a href="hospitals.html"><div class="direction">North-East</div></a>
+                <div class="content">
+                     <a href="hospitals.html"><h3>Vaastu For Hospital</h3></a>
+                     <a href="hospitals.html"><p>The entrance should be welcoming and open in the north-east or east direction. Operation theatres should be placed in the west zone. </p></a>
+                </div>
+            </div>
+            <div class="vaastu-item">
+                <a href="complex.html"><img src="./images/commercial complex.jpg" alt="Toilet"></a>
+                 <a href="complex.html"><div class="direction">North-West</div></a>
+                <div class="content">
+                     <a href="complex.html"><h3>Vaastu For Commercial Complex</h3></h3>
+                     <a href="complex.html"><p>The entrance to the commercial complex should be in the east or north direction. Offices facing north are believed to bring more success.</p></a>
+                </div>
+            </div>
+
+               <div class="vaastu-item">
+                 <a href="banks.html"><img src="./images/banking.jpg" alt="Master Bedroom"></a>
+                 <a href="banks.html"><div class="direction">South-West</div></a>
+                <div class="content">
+                     <a href="banks.html"><h3>Vaastu For Banks</h3></a>
+                     <a href="banks.html"><p>For financial institutions like banks, the locker room should ideally be located in the south-west zone and should open towards the north. </p></a>
+                </div>
+            </div>
+
+               <div class="vaastu-item">
+                 <a href="multiplex.html"><img src="./images/cinema.jpg" alt="Master Bedroom"></a>
+                 <a href="multiplex.html"><div class="direction">South-West</div></a>
+                <div class="content">
+                     <a href="multiplex.html"><h3>Vaastu For Multiplex</h3></a>
+                     <a href="multiplex.html"><p>The entrance should ideally face east or north-east to attract viewers. Ticket counters should be in the north-west zone, while food courts and cafes</p></a>
+                </div>
+            </div>
+
+               <div class="vaastu-item">
+                 <a href="marriage.html"><img src="./images/marriage hall.jpg" alt="Master Bedroom"></a>
+                 <a href="marriage.html"><div class="direction">South-West</div></a>
+                <div class="content">
+                     <a href="marriage.html"><h3>Vaastu For Marriage Hall</h3></a>
+                     <a href="marriage.html"><p>The main entrance should be in the east or north direction. The stage for the bride and groom should be in the west so they face east while seated.</p></a>
+                </div>
+            </div>
+
+        </div>
+  </div>
+</section> 
+
+      
+      
+  <div class="section-divider"></div>
+
+ 
+
+     
+     <section class="industrial-vaastu">
+        <div class="industrial-content">
+            <div class="industrial-text">
+                <h2>Discover the Power of Astrology</h2>
+                <p> Astrology is more than just zodiac signs—it's the cosmic language that reveals your strengths, challenges, and destiny.
+            Discover how the alignment of stars and planets at the time of your birth influences every aspect of your life.</p>
+                <a href="astrology tools.html"><button class="cta-button">More info</button></a>
+            </div>
+            <div class="industrial-image">
+                <img src="./images/astronomy.gif" alt="Industrial Vaastu">
+            </div>
+        </div>
+    </section>
+
+        
+
+
+  
+
+
+    <!-- Numerology Section -->
+   
+    
+    
+
+    <!-- Astrology Section -->
+    <!-- <section id="astrology" class="py-16 px-4 animated-bg">
+        <div class="container  mx-auto text-center" style="max-width: 1400px;">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-primary mb-4">Astrology</h2>
+                <p class="text-lg max-w-3xl mx-auto">Uncover cosmic insights about your personality, relationships, career, and destiny through ancient celestial wisdom.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg card-3d">
+                    <div class="text-5xl text-deep-red mb-4 service-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-3">Kundli Analysis</h3>
+                    <p class="mb-4">Your birth chart reveals planetary positions at your birth time and their influence on various aspects of your life.</p>
+                    
+                    <div class="bg-cream p-4 rounded-lg mb-6">
+                        <div class="grid grid-cols-3 gap-2 text-center mb-3">
+                            <div class="border border-primary p-2 rounded">
+                                <span class="text-sm">Sun</span>
+                            </div>
+                            <div class="border border-primary p-2 rounded">
+                                <span class="text-sm">Moon</span>
+                            </div>
+                            <div class="border border-primary p-2 rounded">
+                                <span class="text-sm">Mercury</span>
+                            </div>
+                            <div class="border border-primary p-2 rounded">
+                                <span class="text-sm">Venus</span>
+                            </div>
+                            <div class="border border-primary p-2 rounded">
+                                <span class="text-sm">Mars</span>
+                            </div>
+                            <div class="border border-primary p-2 rounded">
+                                <span class="text-sm">Jupiter</span>
+                            </div>
+                            <div class="border border-primary p-2 rounded">
+                                <span class="text-sm">Saturn</span>
+                            </div>
+                            <div class="border border-primary p-2 rounded">
+                                <span class="text-sm">Rahu</span>
+                            </div>
+                            <div class="border border-primary p-2 rounded">
+                                <span class="text-sm">Ketu</span>
+                            </div>
+                        </div>
+                        <a href="#consultations" class="text-center block text-accent hover:underline">Get Your Detailed Kundli Analysis</a>
+                    </div>
+                    
+                    <ul class="mb-6 space-y-2">
+                        <li><i class="fas fa-check-circle text-accent mr-2"></i> Planetary positions & aspects</li>
+                        <li><i class="fas fa-check-circle text-accent mr-2"></i> Dasha predictions</li>
+                        <li><i class="fas fa-check-circle text-accent mr-2"></i> House influence analysis</li>
+                        <li><i class="fas fa-check-circle text-accent mr-2"></i> Yogas & Doshas identification</li>
+                    </ul>
+                </div>
+                
+              
+                <div class="bg-white p-8 rounded-xl shadow-lg card-3d">
+                    <div class="text-5xl text-deep-red mb-4 service-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-3">Horoscope Reading</h3>
+                    <p class="mb-4">Regular predictions based on planetary transits help you navigate daily, weekly, monthly, and yearly cycles.</p>
+                    
+                    <div class="grid grid-cols-3 gap-2 text-center mb-6">
+                        <div class="p-2 rounded bg-cream">
+                            <i class="fas fa-sun text-gold mb-1"></i>
+                            <span class="text-xs block">Aries</span>
+                        </div>
+                        <div class="p-2 rounded bg-cream">
+                            <i class="fas fa-sun text-gold mb-1"></i>
+                            <span class="text-xs block">Taurus</span>
+                        </div>
+                        <div class="p-2 rounded bg-cream">
+                            <i class="fas fa-sun text-gold mb-1"></i>
+                            <span class="text-xs block">Gemini</span>
+                        </div>
+                        <div class="p-2 rounded bg-cream">
+                            <i class="fas fa-sun text-gold mb-1"></i>
+                            <span class="text-xs block">Cancer</span>
+                        </div>
+                        <div class="p-2 rounded bg-cream">
+                            <i class="fas fa-sun text-gold mb-1"></i>
+                            <span class="text-xs block">Leo</span>
+                        </div>
+                        <div class="p-2 rounded bg-cream">
+                            <i class="fas fa-sun text-gold mb-1"></i>
+                            <span class="text-xs block">Virgo</span>
+                        </div>
+                        <div class="p-2 rounded bg-cream">
+                            <i class="fas fa-sun text-gold mb-1"></i>
+                            <span class="text-xs block">Libra</span>
+                        </div>
+                        <div class="p-2 rounded bg-cream">
+                            <i class="fas fa-sun text-gold mb-1"></i>
+                            <span class="text-xs block">Scorpio</span>
+                        </div>
+                        <div class="p-2 rounded bg-cream">
+                            <i class="fas fa-sun text-gold mb-1"></i>
+                            <span class="text-xs block">Sagittarius</span>
+                        </div>
+                        <div class="p-2 rounded bg-cream">
+                            <i class="fas fa-sun text-gold mb-1"></i>
+                            <span class="text-xs block">Capricorn</span>
+                        </div>
+                        <div class="p-2 rounded bg-cream">
+                            <i class="fas fa-sun text-gold mb-1"></i>
+                            <span class="text-xs block">Aquarius</span>
+                        </div>
+                        <div class="p-2 rounded bg-cream">
+                            <i class="fas fa-sun text-gold mb-1"></i>
+                            <span class="text-xs block">Pisces</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="mb-6 space-y-2">
+                        <li><i class="fas fa-check-circle text-accent mr-2"></i> Daily horoscope updates</li>
+                        <li><i class="fas fa-check-circle text-accent mr-2"></i> Weekly forecast</li>
+                        <li><i class="fas fa-check-circle text-accent mr-2"></i> Monthly predictions</li>
+                        <li><i class="fas fa-check-circle text-accent mr-2"></i> Yearly outlook</li>
+                    </ul>
+                </div>
+                
+               
+                <div class="bg-white p-8 rounded-xl shadow-lg card-3d">
+                    <div class="text-5xl text-deep-red mb-4 service-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-3">Astrological Remedies</h3>
+                    <p class="mb-4">Personalized remedial solutions to balance planetary influences and mitigate negative effects in your life.</p>
+                    
+                    <div class="grid grid-cols-2 gap-3 mb-6">
+                        <div class="bg-cream p-3 rounded-lg text-center">
+                            <i class="fas fa-gem text-accent mb-1"></i>
+                            <span class="text-sm block">Gemstones</span>
+                        </div>
+                        <div class="bg-cream p-3 rounded-lg text-center">
+                            <i class="fas fa-pray text-accent mb-1"></i>
+                            <span class="text-sm block">Mantras</span>
+                        </div>
+                        <div class="bg-cream p-3 rounded-lg text-center">
+                            <i class="fas fa-coins text-accent mb-1"></i>
+                            <span class="text-sm block">Donations</span>
+                        </div>
+                        <div class="bg-cream p-3 rounded-lg text-center">
+                            <i class="fas fa-fire-alt text-accent mb-1"></i>
+                            <span class="text-sm block">Rituals</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="mb-6 space-y-2">
+                        <li><i class="fas fa-check-circle text-accent mr-2"></i> Planetary remedies</li>
+                        <li><i class="fas fa-check-circle text-accent mr-2"></i> Dosha nivaran</li>
+                        <li><i class="fas fa-check-circle text-accent mr-2"></i> Fast & ritual guidance</li>
+                        <li><i class="fas fa-check-circle text-accent mr-2"></i> Yantra & mantra recommendations</li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+            <div class="text-center mb-8">
+                <h3 class="text-3xl font-bold text-primary mb-4">Informative Videos</h3>
+                <p class="mb-8">Learn more about planets, energies, and remedies through our educational videos.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="video-container">
+                        <div class="bg-black aspect-w-16 aspect-h-9 relative">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="text-white text-center">
+                                    <i class="fas fa-play-circle text-6xl mb-2 text-gold"></i>
+                                    <p class="text-lg">Planetary Influences</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="video-container">
+                        <div class="bg-black aspect-w-16 aspect-h-9 relative">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="text-white text-center">
+                                    <i class="fas fa-play-circle text-6xl mb-2 text-gold"></i>
+                                    <p class="text-lg">Effective Remedies</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="video-container">
+                        <div class="bg-black aspect-w-16 aspect-h-9 relative">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="text-white text-center">
+                                    <i class="fas fa-play-circle text-6xl mb-2 text-gold"></i>
+                                    <p class="text-lg">Cosmic Energies</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- <div class="section-divider"></div> -->
+
+    <!-- Consultation Booking Section -->
+    <!-- <section id="consultations" class="py-16 px-4">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-primary mb-4">Book a Consultation</h2>
+                <p class="text-lg max-w-3xl mx-auto">Schedule a personal consultation with our expert for tailored spiritual guidance and solutions.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="form-3d p-8">
+                    <h3 class="text-2xl font-bold text-primary mb-6">Request Your Appointment</h3>
+                    
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-gray-700 mb-2">First Name</label>
+                                <input type="text" class="w-full p-3 border rounded-lg focus:outline-none" placeholder="Your first name">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Last Name</label>
+                                <input type="text" class="w-full p-3 border rounded-lg focus:outline-none" placeholder="Your last name">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-2">Email Address</label>
+                            <input type="email" class="w-full p-3 border rounded-lg focus:outline-none" placeholder="Your email address">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" class="w-full p-3 border rounded-lg focus:outline-none" placeholder="Your phone number">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-2">Consultation Type</label>
+                            <select class="w-full p-3 border rounded-lg focus:outline-none">
+                                <option>Vaastu Consultation</option>
+                                <option>Numerology Consultation</option>
+                                <option>Astrological Consultation</option>
+                                <option>Combined Services</option>
+                            </select>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Preferred Date</label>
+                                <input type="date" class="w-full p-3 border rounded-lg focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Preferred Time</label>
+                                <select class="w-full p-3 border rounded-lg focus:outline-none">
+                                    <option>Morning (9AM - 12PM)</option>
+                                    <option>Afternoon (12PM - 4PM)</option>
+                                    <option>Evening (4PM - 7PM)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-2">Your Concerns/Questions</label>
+                            <textarea class="w-full p-3 border rounded-lg focus:outline-none" rows="4" placeholder="Please share your concerns or questions..."></textarea>
+                        </div>
+                        
+                        <button class="btn-primary w-full py-3 rounded-lg text-white">Book Consultation</button>
+                    </form>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-bold text-primary mb-4">Consultation Benefits</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mt-1 mr-3 text-lg"></i>
+                                <span>Personalized analysis based on your unique situation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mt-1 mr-3 text-lg"></i>
+                                <span>Practical solutions that fit into your lifestyle</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mt-1 mr-3 text-lg"></i>
+                                <span>Expert guidance from experienced practitioners</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mt-1 mr-3 text-lg"></i>
+                                <span>Follow-up support to address ongoing concerns</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mt-1 mr-3 text-lg"></i>
+                                <span>Comprehensive written report for future reference</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-bold text-primary mb-4">Consultation Process</h3>
+                        <ol class="space-y-4">
+                            <li class="flex">
+                                <div class="mr-4 flex-shrink-0 bg-primary rounded-full w-8 h-8 flex items-center justify-center text-white font-bold">1</div>
+                                <div>
+                                    <h4 class="font-bold">Booking Confirmation</h4>
+                                    <p class="text-sm">After submission, you'll receive a confirmation email with details.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="mr-4 flex-shrink-0 bg-primary rounded-full w-8 h-8 flex items-center justify-center text-white font-bold">2</div>
+                                <div>
+                                    <h4 class="font-bold">Pre-Consultation Form</h4>
+                                    <p class="text-sm">Complete a detailed questionnaire to help us prepare.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="mr-4 flex-shrink-0 bg-primary rounded-full w-8 h-8 flex items-center justify-center text-white font-bold">3</div>
+                                <div>
+                                    <h4 class="font-bold">Consultation Session</h4>
+                                    <p class="text-sm">In-person or video call consultation with our expert.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="mr-4 flex-shrink-0 bg-primary rounded-full w-8 h-8 flex items-center justify-center text-white font-bold">4</div>
+                                <div>
+                                    <h4 class="font-bold">Report & Recommendations</h4>
+                                    <p class="text-sm">Receive a detailed report with actionable recommendations.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="mr-4 flex-shrink-0 bg-primary rounded-full w-8 h-8 flex items-center justify-center text-white font-bold">5</div>
+                                <div>
+                                    <h4 class="font-bold">Follow-Up Support</h4>
+                                    <p class="text-sm">Ongoing assistance to implement the suggestions.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- <div class="section-divider"></div> -->
+
+
+
+    <section class="package-section">
+  <div class="package-grid">
+
+    <!-- Package 1 -->
+    <div class="package-box">
+      <div class="image-area" style="background-image: url('./images/fav2.png');">
+        <div class="price-tag">BOOK NOW ₹14,999/-</div>
+        <div class="package-title">Basic Industrial Vastu Review</div>
+      </div>
+      <div class="package-content">
+        <p>Best For: Small factories, workshops, or warehouses (Online)</p>
+        <a href="#" class="book-btn"> Book Now</a>
+      </div>
+    </div>
+
+    <!-- Package 2 -->
+    <div class="package-box">
+      <div class="image-area"  style="background-image: url('./images/fav2.png');">
+        <div class="price-tag">BOOK NOW ₹29,999/-</div>
+        <div class="package-title">Standard Industrial Vastu Package</div>
+      </div>
+      <div class="package-content">
+        <p> Best For: Medium-scale factories or units (On-site)</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Package 3 -->
+    <div class="package-box">
+      <div class="image-area" style="background-image: url('./images/fav2.png');">
+        <div class="price-tag">BOOK NOW ₹31,000/-</div>
+        <div class="package-title">Premium Industrial Vastu Plan</div>
+      </div>
+      <div class="package-content">
+        <p> Best For: Large industrial setups & customized needs</p>
+        <a href="#" class="book-btn"> Book Now</a>
+      </div>
+    </div>
+
+    <!-- Package 4 -->
+    <div class="package-box">
+      <div class="image-area" style="background-image: url('./images/fav2.png');">
+        <div class="price-tag">CUSTOM PACKAGE</div>
+        <div class="package-title"> Industrial Vastu + Expansion Planning</div>
+      </div>
+      <div class="package-content">
+        <p> Best For: New factory setups & future expansions</p>
+        <a href="#" class="book-btn"> Book Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 px-4 bg-cream">
+        <div class="container  mx-auto text-center" style="max-width: 1200px;">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-primary mb-4">Success Stories</h2>
+                <p class="text-lg max-w-3xl mx-auto">Read what our clients have to say about their transformative experiences.</p>
+            </div>
+            
+            <div class="testimonial-container">
+                <div class="testimonial-slider">
+                    <div class="p-4 w-full md:w-1/3 flex-shrink-0">
+                        <div class="bg-white p-6 rounded-xl shadow-lg h-full">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+                                    RP
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Rajesh Patel</h4>
+                                    <div class="text-gold">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="italic">"After implementing the Vaastu changes suggested by the consultant, my business saw a 40% increase in revenue within just three months. The energy in my office has completely transformed!"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="p-4 w-full md:w-1/3 flex-shrink-0">
+                        <div class="bg-white p-6 rounded-xl shadow-lg h-full">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+                                    SM
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Sunita Mehra</h4>
+                                    <div class="text-gold">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="italic">"The name correction suggested for my daughter based on numerology principles has had a remarkable impact on her academic performance. She's more confident and focused now."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="p-4 w-full md:w-1/3 flex-shrink-0">
+                        <div class="bg-white p-6 rounded-xl shadow-lg h-full">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 bg-deep-red rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+                                    AK
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Amit Kumar</h4>
+                                    <div class="text-gold">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="italic">"The astrological remedies prescribed to me have helped me overcome a prolonged period of career stagnation. Within weeks of performing the suggested rituals, I received a promotion!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+  
+
+    <!-- Blog Section -->
+    <!-- <section id="blog" class="py-16 px-4">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-primary mb-4">Spiritual Insights Blog</h2>
+                <p class="text-lg max-w-3xl mx-auto">Expand your knowledge with our articles on various aspects of Vaastu, Numerology, and Astrology.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+               
+                <div class="blog-card rounded-xl overflow-hidden shadow-lg bg-white">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center bg-primary opacity-70">
+                            <i class="fas fa-home text-6xl text-white"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-accent text-sm mb-2">Vaastu Shastra • 5 min read</div>
+                        <h3 class="text-xl font-bold mb-2 text-primary">7 Common Vaastu Mistakes in Modern Homes</h3>
+                        <p class="mb-4">Discover the common Vaastu flaws in contemporary house designs and how to correct them for better energy flow.</p>
+                        <a href="#" class="text-accent font-medium hover:underline flex items-center">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+               
+                <div class="blog-card rounded-xl overflow-hidden shadow-lg bg-white">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center bg-deep-red opacity-70">
+                            <i class="fas fa-sort-numeric-up text-6xl text-white"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-accent text-sm mb-2">Numerology • 3 min read</div>
+                        <h3 class="text-xl font-bold mb-2 text-primary">What Your Birth Date Reveals About Your Personality</h3>
+                        <p class="mb-4">Learn how the day, month, and year of your birth contribute to your core personality traits and life purpose.</p>
+                        <a href="#" class="text-accent font-medium hover:underline flex items-center">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                
+                <div class="blog-card rounded-xl overflow-hidden shadow-lg bg-white">
+                    <div class="h-48 bg-gray-300 relative overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center bg-accent opacity-70">
+                            <i class="fas fa-star text-6xl text-white"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-accent text-sm mb-2">Astrology • 4 min read</div>
+                        <h3 class="text-xl font-bold mb-2 text-primary">Understanding Planetary Transits and Their Effects</h3>
+                        <p class="mb-4">Explore how planetary movements through different zodiac signs can impact various aspects of your daily life.</p>
+                        <a href="#" class="text-accent font-medium hover:underline flex items-center">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="#" class="btn-primary px-8 py-3 rounded-full inline-block text-white">View All Articles</a>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- <div class="section-divider"></div> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 animated-bg">
+        <div class="container  mx-auto text-center" style="max-width: 1200px;">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-primary mb-4">Get in Touch</h2>
+                <p class="text-lg max-w-3xl mx-auto">Have questions or need more information? Reach out to us through any of these channels.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center contact-method">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                  <h3 class="text-xl font-bold mb-2 text-primary">Call Us</h3>
+                    <p class="mb-2">For immediate assistance</p>
+                   <a href="https://wa.me/919090800081" target="_blank"  style="margin-bottom: 10px; color: var(--accent);">91+ 9090800081
+ 
+</a>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center contact-method">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-primary">Email Us</h3>
+                    <p class="mb-2">Send us your queries</p>
+                    <a href="mailto:info@spiritualharmony.com" class="text-accent hover:underline">info@spiritualharmony.com</a>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center contact-method">
+                    <div class="w-16 h-16 bg-deep-red rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-primary">WhatsApp</h3>
+                    <p class="mb-2">Chat with us directly</p>
+                   <a href="https://wa.me/919090800081" target="_blank"  style="margin-bottom: 10px; color: var(--accent);">91+ 9090800081
+ 
+</a>
+                </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center contact-method">
+                    <div class="w-16 h-16 bg-deep-red rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-primary">Address</h3>
+                    <p class="mb-2" style="color: var(--accent);">Wave One, Gold Tower, 2309, 23rd floor, Wave One, Noida Sector 18, Noida, Uttar Pradesh 201301</p>
+                    
+                </div>
+            </div>
+            
+            <!-- <div class="bg-white p-8 rounded-xl shadow-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-primary mb-6">Send a Message</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Your Name</label>
+                                <input type="text" class="w-full p-3 border rounded-lg focus:outline-none" placeholder="Enter your name">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" class="w-full p-3 border rounded-lg focus:outline-none" placeholder="Enter your email">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" class="w-full p-3 border rounded-lg focus:outline-none" placeholder="Enter subject">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Your Message</label>
+                                <textarea class="w-full p-3 border rounded-lg focus:outline-none" rows="4" placeholder="Type your message here..."></textarea>
+                            </div>
+                            <button class="btn-primary w-full py-3 rounded-lg text-white">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <div class="flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary mb-6">Visit Our Office</h3>
+                            <div class="bg-cream p-6 rounded-lg mb-6">
+                                <p class="mb-2"><i class="fas fa-map-marker-alt text-primary mr-2"></i> 123 Spiritual Street, Harmony Boulevard</p>
+                                <p class="mb-2"><i class="fas fa-city text-primary mr-2"></i> Serenity City, 400001</p>
+                                <p><i class="fas fa-clock text-primary mr-2"></i> Mon-Sat: 9:00 AM - 7:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-primary mb-4">Follow Us</h3>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white hover:bg-deep-red transition duration-300">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white hover:bg-deep-red transition duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white hover:bg-deep-red transition duration-300">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#" class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white hover:bg-deep-red transition duration-300">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+  
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12 px-4">
+        <div class="container  mx-auto text-center" style="max-width: 1200px;">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 flex items-center">
+                      
+                        <img src="./images/logo1.png">
+                    </h3>
+                    <p class="mb-4">Guiding you towards balance, prosperity, and inner peace through ancient spiritual wisdom.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-gold transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-gold transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-gold transition duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-gold transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-gold">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#vaastu" class="footer-link">Vaastu Shastra</a></li>
+                        <li><a href="#numerology" class="footer-link">Numerology</a></li>
+                        <li><a href="#astrology" class="footer-link">Astrology</a></li>
+                        <li><a href="#reports" class="footer-link">Report Generator</a></li>
+                        <li><a href="#consultations" class="footer-link">Consultations</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-gold">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">Home</a></li>
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#blog" class="footer-link">Blog</a></li>
+                        <li><a href="#" class="footer-link">Testimonials</a></li>
+                        <li><a href="#contact" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-gold">Newsletter</h4>
+                    <p class="mb-4">Subscribe to receive spiritual insights and updates.</p>
+                    <form class="mb-4">
+                        <div class="flex">
+                            <input type="email" class="p-2 rounded-l w-full text-gray-800 focus:outline-none" placeholder="Your email address">
+                            <button class="bg-accent px-4 rounded-r hover:bg-deep-red transition duration-300">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <p class="text-sm">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center" style="display: flex; justify-content: space-between;">
+            <div>
+                <p>© 2025  Ashwani Vedic Vaastu. All Rights Reserved.</p>
+            </div>
+            <div>
+               <a style="text-decoration: none;" href="https://arikone.in/"><p>Developed by Arikone</p></a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+    <div class="chat-popup-message" id="chatPopupMessage">
+        Hi! There How Can I Help You.
+    </div>
+    
+    <div class="chat-toggle-button" id="chatToggleButton">
+        💬
+    </div>
+    
+    <div class="chat-widget-container" id="chatWidgetContainer">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>Ashwani Vastu Team</h2>
+                <p>Your guide to Vedic Astrology, Numerology & Vastu Shastra</p>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-message">
+                    <strong style="color: maroon;">Namaste!</strong><br>
+                    I am from the Spiritual Harmony Team. We offer Vaastu, Numerology & Astrology services. How can I assist you today?<br><br>
+                    <em>Spiritual Harmony Team is always here to guide you 🙏</em>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="userInput" placeholder="Type your query here...">
+                <button id="sendButton">Send</button>
+            </div>
+            <div class="footer-text">
+                Powered by Ashwani Vedic Vastu
+            </div>
+        </div>
+    </div>
+    
+      
+    </div>
+
+    <div class="whatsapp-widget fixed left-4 bottom-4 z-50">
+       <a href="https://wa.me/919090800081" target="_blank" class="bg-green-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center" style="margin-bottom: 10px;">
+  <i class="fab fa-whatsapp text-3xl"></i>
+</a>
+    </div>
+
+    <script>
+        // Create animated particles
+        function createParticles() {
+            const container = document.querySelector('.particles-container');
+            if (!container) return;
+            
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Random size
+                const size = Math.random() * 10 + 5;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                // Random position
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                particle.style.left = `${posX}%`;
+                particle.style.top = `${posY}%`;
+                
+                // Random animation delay
+                particle.style.animationDelay = `${Math.random() * 5}s`;
+                
+                container.appendChild(particle);
+            }
+        }
+        
+        
+        
+        // Initialize testimonial slider
+        function initTestimonialSlider() {
+            const slider = document.querySelector('.testimonial-slider');
+            if (!slider) return;
+            
+            let currentSlide = 0;
+            const slides = slider.querySelectorAll('div.w-full');
+            const totalSlides = slides.length;
+            
+            setInterval(() => {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                slider.style.transform = `translateX(-${currentSlide * 33.33}%)`;
+            }, 5000);
+        }
+        
+        // Run functions when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+            setupMobileNav();
+            initTestimonialSlider();
+        });
+    </script>
+
+    
+  <script>
+    function toggleMenu() {
+      document.getElementById("menuBar").classList.toggle("responsive");
+    }
+  </script>
+
+  <script>
+    let currentTab = 'daily';
+    let currentZodiac = 'Aries';
+
+    function setTab(tab) {
+        currentTab = tab;
+
+        // Remove active class from all tab buttons
+        const buttons = document.querySelectorAll('.tabs button');
+        buttons.forEach(btn => btn.classList.remove('active'));
+
+        // Add active class to clicked tab
+        event.target.classList.add('active');
+
+        // Refresh content
+        updateHoroscopeContent();
+    }
+
+    function selectZodiac(zodiac) {
+        currentZodiac = zodiac;
+
+        // Remove active class from all zodiac icons
+        const icons = document.querySelectorAll('.zodiac-item .icon');
+        icons.forEach(icon => icon.classList.remove('active'));
+
+        // Add active class to clicked zodiac icon
+        event.currentTarget.querySelector('.icon').classList.add('active');
+
+        // Update content
+        updateHoroscopeContent();
+    }
+
+    function updateHoroscopeContent() {
+        // Example horoscope content (static for now, you can make this dynamic from database or JSON)
+       const horoscopes = {
+        'Aries': {
+            'daily': "Aries, today brings a surge of energy. Trust your instincts and take the lead.",
+            'weekly': "This week, you're full of enthusiasm. Use it to resolve pending issues.",
+            'monthly': "In May, focus on your goals and don’t let minor setbacks distract you."
+        },
+        'Taurus': {
+            'daily': "Taurus, patience is your strength today. Avoid arguments and stay calm.",
+            'weekly': "This week may test your emotional strength. Stay grounded and focused.",
+            'monthly': "May brings financial opportunities. Stay alert and act wisely."
+        },
+        'Gemini': {
+            'daily': "Your communication skills shine today. Speak with confidence.",
+            'weekly': "A week of connections. Social and professional growth is likely.",
+            'monthly': "Focus on learning and expanding your network this month."
+        },
+        'Cancer': {
+            'daily': "Cancer, trust your intuition today. Emotional clarity will guide you.",
+            'weekly': "This week, reconnect with loved ones. Emotional bonding is important.",
+            'monthly': "In May, home and family take priority. Create a peaceful environment."
+        },
+        'Leo': {
+            'daily': "Leo, your confidence will attract opportunities. Be bold.",
+            'weekly': "Use this week to work on leadership skills. Recognition is coming.",
+            'monthly': "This is your time to shine. May brings career breakthroughs."
+        },
+        'Virgo': {
+            'daily': "Virgo, today is perfect for organizing and planning. Details matter.",
+            'weekly': "Expect clarity in work. Prioritize health and routines.",
+            'monthly': "May encourages self-care and skill-building. Avoid overthinking."
+        },
+        'Libra': {
+            'daily': "Libra, balance is key today. Avoid drama and seek harmony.",
+            'weekly': "This week offers peace in relationships. Embrace compromise.",
+            'monthly': "Focus on beauty, art, and calm interactions this month."
+        },
+        'Scorpio': {
+            'daily': "Scorpio, your intensity brings success today. Stay focused.",
+            'weekly': "This week demands emotional strength. Avoid past conflicts.",
+            'monthly': "May brings transformation. Let go of grudges and grow."
+        },
+        'Sagittarius': {
+            'daily': "Adventures await today. Be open to exploring new paths.",
+            'weekly': "This week is ideal for learning and travel. Expand your mind.",
+            'monthly': "May inspires you to take bold steps toward your dreams."
+        },
+        'Capricorn': {
+            'daily': "Discipline brings rewards today. Stay on track.",
+            'weekly': "A productive week ahead. Don’t ignore your health.",
+            'monthly': "This month supports long-term planning and investments."
+        },
+        'Aquarius': {
+            'daily': "Ideas flow today. Share your thoughts and innovate.",
+            'weekly': "This week favors teamwork. Lead with a fresh perspective.",
+            'monthly': "In May, expect social changes. Embrace new connections."
+        },
+        'Pisces': {
+            'daily': "Your creativity shines today. Express your emotions freely.",
+            'weekly': "A week of dreams and inner growth. Meditation may help.",
+            'monthly': "This month, focus on spiritual peace and mental clarity."
+        }
+    };
+
+        const horoscope = horoscopes[currentZodiac]?.[currentTab] || "Horoscope not available.";
+
+        // Update content on page
+        document.querySelector('#horoscope-details h2').innerText = currentZodiac;
+        document.querySelector('#horoscope-text').innerText = horoscope;
+    }
+</script>
+
+<script>
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      document.getElementById('loader').style.display = 'none';
+      document.getElementById('content').style.display = 'block';
+    }, 2000); // 3000 ms = 3 seconds
+  });
+</script>
+
+<script>
+        // Numerology calculation functions
+        function reduceToSingleDigit(num) {
+            while (num > 9 && num !== 11 && num !== 22 && num !== 33) {
+                num = num.toString().split('').reduce((sum, digit) => sum + parseInt(digit), 0);
+            }
+            return num;
+        }
+
+        function getLetterValue(letter) {
+            const values = {
+                'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5, 'F': 6, 'G': 7, 'H': 8, 'I': 9,
+                'J': 1, 'K': 2, 'L': 3, 'M': 4, 'N': 5, 'O': 6, 'P': 7, 'Q': 8, 'R': 9,
+                'S': 1, 'T': 2, 'U': 3, 'V': 4, 'W': 5, 'X': 6, 'Y': 7, 'Z': 8
+            };
+            return values[letter.toUpperCase()] || 0;
+        }
+
+        function calculateNameValue(name) {
+            return name.replace(/[^A-Za-z]/g, '').split('').reduce((sum, letter) => sum + getLetterValue(letter), 0);
+        }
+
+        function getNumberMeaning(number) {
+            const meanings = {
+                1: "Leadership, independence, pioneering spirit. You are a natural leader with strong determination.",
+                2: "Cooperation, harmony, sensitivity. You work well with others and seek balance in life.",
+                3: "Creativity, communication, optimism. You have artistic talents and express yourself well.",
+                4: "Stability, hard work, organization. You are practical and build solid foundations.",
+                5: "Freedom, adventure, versatility. You love change and new experiences.",
+                6: "Nurturing, responsibility, healing. You care for others and create harmonious environments.",
+                7: "Spirituality, introspection, wisdom. You seek deeper meaning and understanding.",
+                8: "Material success, authority, achievement. You have strong business sense and ambition.",
+                9: "Humanitarianism, completion, wisdom. You serve others and see the bigger picture.",
+                11: "Intuition, inspiration, enlightenment. Master number with high spiritual potential.",
+                22: "Master builder, practical visionary. You can manifest great things in the material world.",
+                33: "Master teacher, compassion, healing. You have the ability to uplift and inspire others."
+            };
+            return meanings[number] || "Special energy patterns indicate unique life path.";
+        }
+
+        // Name Numerology Calculator
+        function calculateNameNumerology() {
+            const name = document.getElementById('nameInput').value.trim();
+            if (!name) {
+                alert('Please enter your name');
+                return;
+            }
+
+            const nameValue = calculateNameValue(name);
+            const nameNumber = reduceToSingleDigit(nameValue);
+            const meaning = getNumberMeaning(nameNumber);
+
+            document.getElementById('nameNumber').textContent = nameNumber;
+            document.getElementById('nameMeaning').textContent = meaning;
+            document.getElementById('nameResult').classList.remove('hidden');
+        }
+
+        // Lucky Name Calculator
+        function calculateLuckyName() {
+            const date = document.getElementById('luckyDateInput').value;
+            const name = document.getElementById('luckyNameInput').value.trim();
+            
+            if (!date || !name) {
+                alert('Please enter both birth date and name');
+                return;
+            }
+
+            const birthDate = new Date(date);
+            const lifePathNumber = reduceToSingleDigit(
+                birthDate.getDate() + (birthDate.getMonth() + 1) + birthDate.getFullYear()
+            );
+            
+            const nameNumber = reduceToSingleDigit(calculateNameValue(name));
+            const compatibility = Math.abs(lifePathNumber - nameNumber);
+            
+            let score, advice;
+            if (compatibility === 0) {
+                score = "Perfect Match!";
+                advice = "This name is extremely lucky for you. It aligns perfectly with your life path.";
+            } else if (compatibility <= 2) {
+                score = "Very Good";
+                advice = "This name has strong positive energy for you and will bring good fortune.";
+            } else if (compatibility <= 4) {
+                score = "Moderate";
+                advice = "This name has neutral energy. Consider adjusting the spelling for better luck.";
+            } else {
+                score = "Challenging";
+                advice = "This name may create obstacles. Consider choosing a different name for better luck.";
+            }
+
+            document.getElementById('luckyScore').textContent = score;
+            document.getElementById('luckyAdvice').textContent = advice;
+            document.getElementById('luckyNameResult').classList.remove('hidden');
+        }
+
+        // Born Lucky Numbers Calculator
+        function calculateBornLucky() {
+            const date = document.getElementById('bornLuckyDate').value;
+            if (!date) {
+                alert('Please enter your birth date');
+                return;
+            }
+
+            const birthDate = new Date(date);
+            const day = birthDate.getDate();
+            const month = birthDate.getMonth() + 1;
+            const year = birthDate.getFullYear();
+            
+            const lifePathNumber = reduceToSingleDigit(day + month + year);
+            const destinyNumber = reduceToSingleDigit(year);
+            const soulNumber = reduceToSingleDigit(day);
+            
+            const luckyNumbers = [
+                lifePathNumber,
+                destinyNumber,
+                soulNumber,
+                reduceToSingleDigit(lifePathNumber + destinyNumber),
+                reduceToSingleDigit(lifePathNumber + soulNumber),
+                reduceToSingleDigit(day * month)
+            ];
+
+            const numbersContainer = document.getElementById('luckyNumbers');
+            numbersContainer.innerHTML = '';
+            luckyNumbers.forEach(num => {
+                const div = document.createElement('div');
+                div.className = 'bg-white bg-opacity-20 rounded-lg p-3 text-center font-bold text-2xl';
+                div.textContent = num;
+                numbersContainer.appendChild(div);
+            });
+
+            document.getElementById('luckyMeaning').textContent = 
+                `Your life path number is ${lifePathNumber}. These numbers will bring you luck in various aspects of life including career, relationships, and personal growth.`;
+            
+            document.getElementById('bornLuckyResult').classList.remove('hidden');
+        }
+
+        // Numerology Predictor
+        function calculatePredictions() {
+            const name = document.getElementById('predictorName').value.trim();
+            const date = document.getElementById('predictorDate').value;
+            
+            if (!name || !date) {
+                alert('Please enter both name and birth date');
+                return;
+            }
+
+            const birthDate = new Date(date);
+            const lifePathNumber = reduceToSingleDigit(
+                birthDate.getDate() + (birthDate.getMonth() + 1) + birthDate.getFullYear()
+            );
+            const nameNumber = reduceToSingleDigit(calculateNameValue(name));
+            
+            const predictions = `
+                <div class="space-y-3">
+                    <div><strong>Life Path Number:</strong> ${lifePathNumber}</div>
+                    <div><strong>Name Number:</strong> ${nameNumber}</div>
+                    <div><strong>Career:</strong> ${getCareerPrediction(lifePathNumber)}</div>
+                    <div><strong>Love Life:</strong> ${getLovePrediction(nameNumber)}</div>
+                    <div><strong>Health:</strong> ${getHealthPrediction(lifePathNumber)}</div>
+                    <div><strong>Lucky Days:</strong> ${getLuckyDays(lifePathNumber)}</div>
+                </div>
+            `;
+            
+            document.getElementById('predictions').innerHTML = predictions;
+            document.getElementById('predictorResult').classList.remove('hidden');
+        }
+
+        function getCareerPrediction(number) {
+            const predictions = {
+                1: "Leadership roles, entrepreneurship, management positions suit you best.",
+                2: "Teamwork, counseling, diplomacy, and partnership businesses are ideal.",
+                3: "Creative fields, communication, entertainment, and arts will bring success.",
+                4: "Engineering, architecture, finance, and systematic work environments.",
+                5: "Travel, sales, marketing, and dynamic changing work environments.",
+                6: "Healthcare, teaching, social work, and service-oriented professions.",
+                7: "Research, spirituality, analysis, and behind-the-scenes work.",
+                8: "Business, finance, real estate, and positions of authority.",
+                9: "Humanitarian work, counseling, healing, and global organizations."
+            };
+            return predictions[number] || "Unique career path with special opportunities.";
+        }
+
+        function getLovePrediction(number) {
+            const predictions = {
+                1: "You attract confident partners and prefer to lead in relationships.",
+                2: "You seek harmony and balance, attracting sensitive and caring partners.",
+                3: "You attract creative and communicative partners who share your interests.",
+                4: "You prefer stable, reliable partners who value commitment and loyalty.",
+                5: "You attract adventurous partners who love freedom and new experiences.",
+                6: "You attract nurturing partners and create loving, harmonious relationships.",
+                7: "You attract deep, spiritual partners who understand your need for space.",
+                8: "You attract ambitious partners and build powerful, successful relationships.",
+                9: "You attract compassionate partners who share your humanitarian values."
+            };
+            return predictions[number] || "Special romantic destiny with unique partnership qualities.";
+        }
+
+        function getHealthPrediction(number) {
+            const predictions = {
+                1: "Strong constitution, but watch stress levels and blood pressure.",
+                2: "Sensitive digestive system, benefit from peaceful environments.",
+                3: "Good overall health, but watch throat and respiratory issues.",
+                4: "Sturdy health, but maintain regular exercise and avoid overwork.",
+                5: "High energy levels, but watch nervous system and anxiety.",
+                6: "Generally healthy, but watch heart and circulation issues.",
+                7: "Need mental stimulation, watch for depression and isolation.",
+                8: "Strong physical health, but watch for work-related stress.",
+                9: "Empathetic nature may affect emotional health, practice boundaries."
+            };
+            return predictions[number] || "Balanced health with attention to mind-body connection.";
+        }
+
+        function getLuckyDays(number) {
+            const days = {
+                1: "Sunday, Monday",
+                2: "Monday, Friday",
+                3: "Wednesday, Thursday",
+                4: "Sunday, Saturday",
+                5: "Wednesday, Friday",
+                6: "Friday, Monday",
+                7: "Monday, Sunday",
+                8: "Saturday, Tuesday",
+                9: "Tuesday, Thursday"
+            };
+            return days[number] || "All days have potential for luck.";
+        }
+</script>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+    const chatMessages = document.getElementById('chatMessages');
+    const userInput = document.getElementById('userInput');
+    const sendButton = document.getElementById('sendButton');
+    const chatToggleButton = document.getElementById('chatToggleButton');
+    const chatWidgetContainer = document.getElementById('chatWidgetContainer');
+
+    const AI_NAME = "Spiritual Harmony Team";
+    const COMPANY_NAME_FULL = "Arostate (Spiritual Harmony)";
+    const WEBSITE_NAME = "Spiritual Harmony";
+    const CONTACT_PHONE = "+91 9090800081";
+    const CONTACT_WHATSAPP = "+91 9090800081";
+    const CONTACT_EMAIL = "info@spiritualharmony.com";
+    const COMPANY_ADDRESS = "Wave One, Gold Tower, 2309, 23rd floor, Wave One, Noida Sector 18, Noida, Sector 18, Noida, Uttar Pradesh 201301";
+
+    const GREETINGS = ["Namaste!", "Pranam!"];
+    const CLOSING = `${AI_NAME} is always here to guide you 🙏`;
+
+    let isChatOpen = false;
+
+    function getRandomGreeting() {
+        return GREETINGS[Math.floor(Math.random() * GREETINGS.length)];
+    }
+
+    function addMessage(text, sender) {
+        const messageDiv = document.createElement('div');
+        messageDiv.classList.add('message', `${sender}-message`);
+        if (sender === 'ai') {
+            messageDiv.innerHTML = text;
+        } else {
+            messageDiv.textContent = text;
+        }
+        chatMessages.appendChild(messageDiv);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function getAIResponse(userText) {
+        const query = userText.toLowerCase().trim();
+        let responseBody = "";
+
+        // Basic Company Info (already present, slight update)
+        if (query.includes("who are you") || query.includes("your name")) {
+            responseBody = `I am part of the ${AI_NAME}, representing ${COMPANY_NAME_FULL}. We offer guidance in Vaastu, Numerology, and Astrology.`;
+        } else if (query.includes("company name")) {
+            responseBody = `Our company is ${COMPANY_NAME_FULL}. We operate under the brand ${WEBSITE_NAME}.`;
+        } else if (query.includes("address") || query.includes("kahan hai")) {
+            responseBody = `🏢 Our office is at: ${COMPANY_ADDRESS}.`;
+        } else if (query.includes("phone") || query.includes("contact number")) {
+            responseBody = `📞 You can call us at ${CONTACT_PHONE}.`;
+        } else if (query.includes("whatsapp")) {
+            responseBody = `📱 Reach us on WhatsApp: ${CONTACT_WHATSAPP}.`;
+        } else if (query.includes("email") || query.includes("email id")) {
+            responseBody = `📧 Email us at ${CONTACT_EMAIL}.`;
+        } else if (query.includes("contact") || query.includes("kaise sampark kare")) {
+            responseBody = `You can contact us via: <br>📞 Phone: ${CONTACT_PHONE} <br>📱 WhatsApp: ${CONTACT_WHATSAPP} <br>📧 Email: ${CONTACT_EMAIL} <br>🏢 Address: ${COMPANY_ADDRESS}. <br>For detailed consultation, please visit our website.`;
+        }
+
+        // Core Services Overview
+        else if (query.includes("services offered") || query.includes("kya services hai") || query.includes("what do you offer")) {
+            responseBody = `At ${WEBSITE_NAME}, we provide expert services in: <br>🧭 Vaastu Shastra (Residential, Industrial, Commercial) <br>✨ Astro Vaastu <br>🔢 Numerology (Business & Personal) <br>🔮 Astrology Services <br>🛍️ Vaastu Shop <br>How can I assist you with a specific service today?`;
+        }
+
+        // Vaastu Shastra - General
+        else if (query.includes("vastu shastra") || query.includes("vaastu") && !query.includes("astro") && !query.includes("shop") && !query.includes("industrial") && !query.includes("commercial") && !query.includes("residential") && !query.includes("fayda") && !query.includes("benefit")) {
+            responseBody = `Vaastu Shastra is an ancient Indian science for harmonious living and working spaces. We offer Vaastu for Residential, Industrial, and Commercial properties. Do you have a specific type of property in mind or a particular question about Vaastu?`;
+        }
+
+        // Vaastu for Industrial & Commercial - General Info, Features, Benefits
+        else if ((query.includes("industrial vastu") || query.includes("commercial vastu") || (query.includes("vastu") && (query.includes("business") || query.includes("factory") || query.includes("office") || query.includes("showroom") || query.includes("restaurant")))) && !query.includes("package") && !query.includes("price") && !query.includes("fayda") && !query.includes("benefit") && !query.includes("production") && !query.includes("सुधार") && !query.includes("स्थिरता")) {
+            responseBody = `Vaastu Shastra for Industrial & Commercial spaces helps align your business with cosmic principles for positivity, growth, and prosperity. <br><br>Key aspects we cover: Site selection, entrance, CEO cabin, staff seating, machinery placement, etc. Our solutions are customized for your specific business type (e.g., showroom, hospital, factory). <br><br>Benefits include: Increased staff efficiency, better sales, financial stability, and improved brand image. We often use non-demolition remedies like color therapy and pyramids. <br>Would you like to know about a specific type of commercial/industrial Vaastu?`;
+        }
+        // Fayda of Industrial/Commercial Vastu
+        else if (query.includes("fayda industrial vastu") || query.includes("fayda commercial vastu") || query.includes("benefit of industrial vastu") || query.includes("benefit of commercial vastu") || query.includes("औद्योगिक वास्तु के फायदे") || query.includes("वाणिज्यिक वास्तु के फायदे") || query.includes("vaastu shastra ka industrial aur commercial spaces ke liye kya fayda hota hai")) {
+            responseBody = `Vaastu Shastra offers significant benefits for industrial and commercial spaces: <br>📈 **Utpadan mein vriddhi (Increased Production):** Better efficiency and output. <br>💰 **Vyavsayik samriddhi (Business Prosperity):** Financial growth and success. <br>🤝 **Karmachariyon mein samanjasy (Employee Harmony):** Better productivity and positive environment. <br>🌿 **Prakritik tatvon ka santulan (Balance of Natural Elements):** Positive energy flow. <br>解決 **Vyavsayik samasyaon ka samadhan (Solution to Business Problems):** Overcoming obstacles. <br>🎯 **Customer attraction aur branding (Customer Attraction & Branding):** Improved sales and brand image.`;
+        }
+        // Does Vaastu increase production?
+        else if (query.includes("vastu increase production") || query.includes("उत्पादन बढ़ता है वास्तु से") || query.includes("kya वास्तु शास्त्र से औद्योगिक स्थानों में उत्पादन बढ़ता है")) {
+            responseBody = `Yes, Vaastu Shastra can definitely help increase production in industrial spaces. By aligning machinery, raw materials, office spaces, and energy flow according to Vaastu principles, it creates a positive and efficient environment. This leads to better resource utilization, fewer breakdowns, and improved employee morale, all contributing to increased production.`;
+        }
+        // Real improvement from Vaastu?
+        else if (query.includes("real improvement vastu") || query.includes("वास्तविक सुधार वास्तु से") || query.includes("kya वास्तु शास्त्र से उत्पादन में वास्तविक सुधार दिखता है")) {
+            responseBody = `Yes, real improvements in production are often seen with Vaastu implementation. When a factory's layout, machinery placement, and energy flows are harmonized as per Vaastu, it can lead to: <br>- Increased production capacity <br>- Reduced machinery breakdowns <br>- Better employee morale and coordination <br>- Faster sales of finished goods <br>- Fewer administrative issues and financial losses.`;
+        }
+        // Stability and growth from Vaastu?
+        else if (query.includes("vastu stability growth") || query.includes("स्थिरता और वृद्धि वास्तु से") || query.includes("kya वास्तु शास्त्र से उत्पादन में स्थिरता और वृद्धि दिखती है")) {
+            responseBody = `Yes, Vaastu Shastra can contribute to both stability and growth in production. <br>- **Stability** comes from reduced disruptions, fewer machinery issues, and a harmonious work environment. <br>- **Growth** is achieved through optimal resource use, increased efficiency, and positive energy attracting more business opportunities. This leads to long-term progress.`;
+        }
+
+        // Specific Industrial/Commercial Vaastu
+        else if (query.includes("factory vastu")) {
+            responseBody = `For Factory Vaastu, we focus on: <br>- Production units: Ideally in South or West zones. <br>- Raw materials storage: South-West corner is preferred. <br>- Entrance, office, and finished goods storage are also key. <br>A detailed analysis of your specific factory layout is recommended.`;
+        } else if (query.includes("warehouse vastu")) {
+            responseBody = `For Warehouse Vaastu, the entrance is crucial, ideally in the North or East. Proper storage zones for different types of goods also play a significant role in smooth operations.`;
+        } else if (query.includes("office vastu")) {
+            responseBody = `Office Vaastu aims to enhance productivity and success. Key considerations include the main entrance (East or North preferred for commercial complexes), direction faced by key personnel, staff seating arrangements, and placement of accounts/finance departments.`;
+        } else if (query.includes("showroom vastu") || query.includes("shop vastu")) {
+            responseBody = `For Showrooms and Shops, the main entrance and display of goods are vital. Vaastu principles can help attract more customers and boost sales. For example, in a Mall, electronics/restaurants are often best in the South-East.`;
+        } else if (query.includes("hospital vastu")) {
+            responseBody = `Hospital Vaastu is critical for patient recovery and smooth operations. Entrance (North-East or East), placement of operation theatres (West zone), and patient rooms are carefully planned.`;
+        } // Add more specific types like Mall, Bank, Multiplex, Marriage Hall if frequent.
+
+        // Numerology
+        else if (query.includes("numerology") && !query.includes("astro")) {
+            if (query.includes("business") || query.includes("company name") || query.includes("company")) {
+                responseBody = `Numerology for business success involves analyzing numbers related to your business. Our services include: <br>- Business name analysis & valuation. <br>- Suggestions for lucky business names (up to 10). <br>- Lucky colors & numbers for business cards, logos. <br>- Auspicious dates & timings for important decisions. <br>- Suggestions for lucky office/phone/vehicle numbers. <br>- Detailed business numerology report with lifetime backup support. <br>It can bring dramatic positive results and help in strategic planning.`;
+            } else if (query.includes("name correction")) {
+                 responseBody = `Yes, Numerology can be used for name correction for individuals and businesses to align vibrations for better outcomes. For example, Sunita Mehra's daughter's academic performance improved through numerology name correction, as per our testimonials.`;
+            }
+             else {
+                responseBody = `Numerology uses the vibrational power of numbers to guide life decisions. We offer numerology for business names, personal guidance, lucky numbers, colors, and auspicious timings. How can I help you with numerology today?`;
+            }
+        }
+        else if (query.includes("numerology se business ke liye best naam aur timing kaise chune")) {
+            responseBody = `Numerology helps choose the best name and timing for business by: <br>1. Analyzing the vibration of different name options to find one that aligns with the business owner's numbers and business goals. <br>2. Calculating auspicious dates and times (Muhurta) for important events like business launch, new ventures, or signing contracts, based on planetary positions and numerological compatibility.`;
+        }
+
+
+        // Astrology
+        else if (query.includes("astrology") && !query.includes("vastu")) {
+            if (query.includes("business") || query.includes("industrial growth")) {
+                responseBody = `Astrology for Business & Industrial Growth involves analyzing the owner's birth chart (kundali) and the company's inception chart. Our services include: <br>- Office/factory layout & Vaastu remedies based on owner's kundali. <br>- Planning business expansion during favorable planetary periods (shubh grah dasha). <br>- Remedies like yantras, gemstones, and rituals for business obstacles. <br>- Customized growth solutions by combining Astro-Vaastu principles.`;
+            } else if (query.includes("career") || query.includes("promotion")) {
+                 responseBody = `Astrological remedies can indeed help overcome career stagnation and open paths for promotion, as Amit Kumar experienced according to our client testimonials. This often involves analyzing your birth chart for strengths, weaknesses, and favorable periods.`;
+            }
+            else {
+                responseBody = `Astrology provides insights based on planetary positions at the time of birth. We offer services like kundali analysis, dasha analysis, remedies for obstacles, and guidance for personal and professional life. What specific astrological guidance are you looking for?`;
+            }
+        }
+        else if (query.includes("astrology services kis tarah se business growth ko support karti hain")) {
+            responseBody = `Astrology services support business growth by: <br>1. Analyzing the business owner's birth chart (kundali) to identify strengths, favorable periods, and potential challenges. <br>2. Suggesting auspicious times (Muhurta) for launching new ventures or expansions. <br>3. Recommending remedies (like gemstones, yantras, or pujas) to mitigate negative planetary influences affecting the business. <br>4. Aligning business strategies with planetary transits for better outcomes.`;
+        }
+
+
+        // Astro Vaastu
+        else if (query.includes("astro vastu") || query.includes("astrovaastu")) {
+            responseBody = `Astro Vaastu combines the principles of Astrology and Vaastu Shastra to provide highly personalized and effective solutions. It considers the astrological charts of the owners/key persons along with the Vaastu of the premises for holistic well-being and success.`;
+        }
+
+        // Vaastu Shop
+        else if (query.includes("vastu shop") || query.includes("vaastu products")) {
+            responseBody = `🛍️ We have a Vaastu Shop where you can find various authentic Vaastu products and remedies. Please visit the 'Vaastu Shop' section on our ${WEBSITE_NAME} website for more details and to make purchases.`;
+        }
+
+        // Integrated Services
+        else if (query.includes("integrated services") || query.includes("why choose all three") || query.includes("one-stop solution")) {
+            responseBody = `Choosing our integrated Vaastu, Numerology & Astrology services offers a powerful, one-stop solution: <br> holistic approach strengthening your business from every angle. <br>🛠️ **No Demolition Remedies:** Modern solutions implemented without disrupting business operations. <br>🌍 **Global Experience:** World-class consultancy based on experience with diverse clients. <br>✅ **Proven Results:** Tangible growth and prosperity, as shown by real-life success stories.`;
+        }
+
+        // Consultation Process
+        else if (query.includes("process") || query.includes("how do you work") || query.includes("consultation process")) {
+            responseBody = `Our consultation process typically involves: <br>1. **Initial Consultation:** Collecting business details, location, and owner's information. <br>2. **Site Visit & Analysis:** Detailed assessment of the space based on Vaastu, Numerology, and Astrology. (On-site or Online as per package) <br>3. **Customized Report:** Providing practical, actionable remedies and recommendations. <br>4. **Implementation Support:** Guidance in implementing remedies and regular follow-up. <br>Would you like to know about our service packages?`;
+        }
+        // Vastu aur Numerology ki madad se kya challenges door kiye ja sakte hain
+        else if (query.includes("vastu aur numerology ki madad se kya challenges door kiye ja sakte hain") || query.includes("challenges vastu numerology")) {
+            responseBody = `Vaastu and Numerology can help address various challenges: <br>- **Vaastu:** Can resolve issues related to financial blockages, lack of growth, employee conflicts, health problems within the premises, and negative energy by correcting directional imbalances and energy flows. <br>- **Numerology:** Can help with challenges related to business name not attracting success, wrong timing for ventures, partnership incompatibility, and personal obstacles by aligning names, dates, and understanding life path numbers.`;
+        }
+         // In services ke zariye long-term business success kaise hasil hoti hai
+        else if (query.includes("long-term business success kaise hasil hoti hai") || query.includes("long term success with these services")) {
+            responseBody = `Long-term business success is achieved through these services by creating a foundation of positive energy and alignment: <br>- **Vaastu** ensures a harmonious and productive environment. <br>- **Numerology** aligns business identity and decisions with favorable vibrations. <br>- **Astrology** provides strategic insights and remedies for planetary influences. <br>This holistic approach minimizes obstacles, maximizes opportunities, and supports sustained growth and stability.`;
+        }
+
+
+        // Service Packages
+        else if (query.includes("package") || query.includes("price") || query.includes("cost") || query.includes("fee") || query.includes("charges") && (query.includes("vastu") || query.includes("industrial"))) {
+            responseBody = `We offer several service packages for Industrial Vaastu: <br>1. **Basic Industrial Vastu Review (Online):** ₹14,999 (For small factories, workshops, warehouses) <br>2. **Standard Industrial Vastu Package (On-site):** ₹29,999 (For medium-scale factories) <br>3. **Premium Industrial Vastu Plan:** ₹31,000 (For large industrial setups & customized needs) <br>4. **Custom Package - Industrial Vastu + Expansion Planning:** For new setups & future expansions (Contact for quote). <br>For other services or a detailed quote, please contact us or visit our website.`;
+        }
+
+        // Client Testimonials
+        else if (query.includes("testimonial") || query.includes("client review") || query.includes("feedback")) {
+            responseBody = `We have received positive feedback from many clients. For instance: <br>- Rajesh Patel reported a 40% increase in business revenue after Vaastu. <br>- Sunita Mehra saw improvement in her daughter's academics via numerology name correction. <br>- Amit Kumar overcame career stagnation with astrological remedies. <br>You can find more testimonials on our ${WEBSITE_NAME} website.`;
+        }
+
+        // Horoscope Section
+        else if (query.includes("horoscope") || query.includes("rashifal") || query.includes("aries") || query.includes("taurus") /* add other signs if needed */) {
+            responseBody = `We provide Daily Horoscopes on our ${WEBSITE_NAME} website. Please visit the horoscope section there for predictions for your zodiac sign. For example, for Aries on Monday, May 12, 2025, the mood is creative, lucky numbers are 2 & 7, and lucky color is Red.`;
+        }
+        
+        // Website Navigation / Other Features
+        else if (query.includes("blog") || query.includes("article")) {
+            responseBody = `You can find informative blogs and articles on Vaastu, Numerology, and Astrology on our ${WEBSITE_NAME} website in the 'Blogs' section.`;
+        } else if (query.includes("media") || query.includes("press release")) {
+            responseBody = `For our media appearances and press releases, please check the 'Media' and 'Press Releases' sections on the ${WEBSITE_NAME} website.`;
+        } else if (query.includes("newsletter") || query.includes("subscribe")) {
+            responseBody = `You can subscribe to our newsletter on the ${WEBSITE_NAME} website to receive updates and insights directly to your inbox.`;
+        } else if (query.includes("social media")) {
+            responseBody = `Yes, we are on social media! You can find the links on our ${WEBSITE_NAME} website.`;
+        } else if (query.includes("book consultation") || query.includes("appointment")) {
+            responseBody = `To book a consultation, please visit the 'Contact Us' page on our ${WEBSITE_NAME} website or call us at ${CONTACT_PHONE}. You can also fill out the consultation booking form there.`;
+        }
+
+
+        // Fallback / Default
+        else {
+            responseBody = `I can provide guidance on Vaastu Shastra (Residential, Industrial, Commercial 🧭), Numerology (Business & Personal 🔢), and Astrology Services (🔮). How may I assist you with these topics today? For specific queries not covered, please visit our ${WEBSITE_NAME} website or contact us directly.`;
+        }
+
+        return `<span class="greeting">${getRandomGreeting()}</span><br>${responseBody}<br><span class="closing">${CLOSING}</span>`;
+    }
+
+    function handleUserQuery() {
+        const userText = userInput.value.trim();
+        if (userText === "") return;
+
+        addMessage(userText, 'user');
+        userInput.value = "";
+
+        setTimeout(() => {
+            const aiFullResponse = getAIResponse(userText);
+            addMessage(aiFullResponse, 'ai');
+        }, 500);
+    }
+
+    function toggleChat() {
+        isChatOpen = !isChatOpen;
+        if (isChatOpen) {
+            chatWidgetContainer.classList.add('show');
+            chatToggleButton.innerHTML = '✕';
+            if (chatMessages.children.length === 0) {
+                setTimeout(() => {
+                    const welcomeMessage = `<span class="greeting">${getRandomGreeting()}</span><br>I am from the ${AI_NAME}. We offer Vaastu, Numerology & Astrology services. How can I assist you today?<br><span class="closing">${CLOSING}</span>`;
+                    addMessage(welcomeMessage, 'ai');
+                }, 100);
+            }
+        } else {
+            chatWidgetContainer.classList.remove('show');
+            chatToggleButton.innerHTML = '💬';
+        }
+    }
+
+    sendButton.addEventListener('click', handleUserQuery);
+    userInput.addEventListener('keypress', (event) => {
+        if (event.key === 'Enter') {
+            handleUserQuery();
+        }
+    });
+    chatToggleButton.addEventListener('click', toggleChat);
+});
+
+</script>
+
+<script>
+    // Show/Hide Chat
+    function toggleChat() {
+        const chat = document.getElementById("chatContainer");
+        chat.style.display = (chat.style.display === "none" || chat.style.display === "") ? "block" : "none";
+    }
+
+    // Auto-hide popup after 5 seconds
+    window.addEventListener('DOMContentLoaded', () => {
+        const popup = document.getElementById('chatPopupMessage');
+        setTimeout(() => {
+            popup.style.display = 'none';
+        }, 5000);
+    });
+</script>
+
+<script>
+    const compassImg = document.getElementById('compass');
+    const headingValue = document.getElementById('headingValue');
+
+    function handleOrientation(event) {
+      // Try to get heading from webkitCompassHeading (iOS)
+      let heading;
+      if (event.webkitCompassHeading !== undefined) {
+        heading = event.webkitCompassHeading;
+      } else if (event.alpha !== null) {
+        // Android: alpha is 0 when device facing north
+        heading = 360 - event.alpha;
+      } else {
+        heading = 0;
+      }
+      // Normalize heading
+      if (heading < 0) heading += 360;
+      heading = heading % 360;
+
+      // Rotate the compass image (negative for correct direction)
+      compassImg.style.transform = `rotate(${-heading}deg)`;
+
+      // Show heading value
+      headingValue.textContent = `Heading: ${heading.toFixed(0)}°`;
+    }
+
+    // Request permission for iOS 13+ devices
+    function requestPermission() {
+      if (
+        typeof DeviceOrientationEvent !== 'undefined' &&
+        typeof DeviceOrientationEvent.requestPermission === 'function'
+      ) {
+        DeviceOrientationEvent.requestPermission()
+          .then(permissionState => {
+            if (permissionState === 'granted') {
+              window.addEventListener('deviceorientation', handleOrientation, true);
+            } else {
+              headingValue.textContent = 'Permission denied for compass.';
+            }
+          })
+          .catch(() => {
+            headingValue.textContent = 'Compass permission error.';
+          });
+      } else {
+        // Non-iOS devices
+        window.addEventListener('deviceorientation', handleOrientation, true);
+      }
+    }
+
+    // Start on user interaction for iOS
+    window.addEventListener('click', requestPermission, { once: true });
+    window.addEventListener('touchstart', requestPermission, { once: true });
+    // For non-iOS, try auto-start
+    requestPermission();
+  </script>
+
+
+<script>
+
+function updateCompass(alpha) {
+    const compass = document.getElementById('compass');
+    const direction = document.getElementById('direction');
+    // iOS uses webkitCompassHeading (clockwise from North)
+    // Android uses alpha (counterclockwise from North)
+    compass.style.transform = 'rotate(' + (-alpha) + 'deg)';
+    direction.textContent = 'Direction: ' + Math.round(alpha) + '°';
+  }
+  
+  function handleOrientation(event) {
+    let alpha;
+    if (event.webkitCompassHeading) {
+      // iOS
+      alpha = event.webkitCompassHeading;
+    } else if (typeof event.alpha === 'number') {
+      // Android and others
+      alpha = 360 - event.alpha; // Adjust for compass direction
+    } else {
+      alpha = 0;
+    }
+    updateCompass(alpha);
+  }
+  
+  // iOS 13+ requires permission
+  function initCompass() {
+    if (typeof DeviceOrientationEvent !== 'undefined' &&
+        typeof DeviceOrientationEvent.requestPermission === 'function') {
+      DeviceOrientationEvent.requestPermission()
+        .then(permissionState => {
+          if (permissionState === 'granted') {
+            window.addEventListener('deviceorientation', handleOrientation, true);
+          } else {
+            alert('Compass permission denied.');
+          }
+        })
+        .catch(console.error);
+    } else {
+      window.addEventListener('deviceorientation', handleOrientation, true);
+    }
+  }
+  
+  window.onload = initCompass;
+  </script>
+
+</body>
+</html>
