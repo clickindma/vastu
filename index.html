@@ -1612,32 +1612,7 @@
             100% { opacity: 0; transform: translateY(-10px); }
         }
 
-
-.compass-container {
-      position: relative;
-      width: 320px;
-      height: 320px;
-      max-width: 90vw;
-      max-height: 90vw;
-    }
-    .compass-img {
-      width: 100%;
-      height: 100%;
-      display: block;
-      transition: transform 0.3s cubic-bezier(.4,2.2,.2,1);
-      will-change: transform;
-      pointer-events: none;
-      user-select: none;
-    }
-    .heading-value {
-      margin-top: 20px;
-      font-size: 1.2em;
-      font-family: monospace;
-      color: #333;
-    }
-
-
-    .compass-container {
+        .compass-container {
             position: relative;
             width: 300px;
             height: 300px;
@@ -1648,7 +1623,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            /* background-color: #000; */
+            background-color: #000;
             border-radius: 50%;
             overflow: hidden;
         }
@@ -1659,7 +1634,6 @@
             height: 100%;
             background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><circle cx="250" cy="250" r="245" fill="none" stroke="%234a6b82" stroke-width="1" /></svg>');
             background-size: contain;
-            transition: transform 0.1s ease-out;
         }
 
         .degree-markings {
@@ -1809,7 +1783,7 @@
             left: 50%;
             width: 45%;
             height: 1px;
-            background-color: #800008;
+            background-color: #4a6b82;
             transform-origin: left center;
         }
 
@@ -1820,7 +1794,7 @@
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            border: 2px solid #800000;
+            border: 2px solid #4a6b82;
         }
 
         .degree-numbers {
@@ -1828,7 +1802,7 @@
             width: 100%;
             height: 100%;
             font-size: 12px;
-            color: #800000;
+            color: #4a6b82;
         }
 
         .degree-number {
@@ -1854,11 +1828,16 @@
             max-width: 80%;
             color: #ddd;
         }
-        
-        #compass {
-  transition: transform 0.2s linear;
-}
 
+        button {
+            padding: 10px 20px;
+            margin: 20px;
+            background-color: #4a6b82;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
 
     </style>
 </head>
@@ -2032,12 +2011,32 @@
       
             <!-- Right Compass -->
                <!-- <div class="w-full md:w-1/2 flex justify-center items-center bg-cover bg-center bg-no-repeat min-h-[500px] md:min-h-[500px]" style="background: url('./images/compass\ circle.gif')center center/cover; width: 570px; padding: 30px;"> -->
-                <div id="compassContainer" style="width:200px; margin:auto;">
-                    <img src="./images/compass (1).png" id="compass" style="width:100%; transform-origin:50% 50%;">
-                    <div style="text-align:center; margin-top:10px;">
-                      <span id="direction">Direction: --°</span>
+                <div class="compass-container">
+                    <div class="compass-face">
+                        <div class="outer-ring"></div>
+                        <div class="compass-dial" id="compassDial">
+                            <div class="degree-numbers" id="degreeNumbers"></div>
+                            <div id="compassRays" class="compass-rays"></div>
+                            <div class="cardinal-directions">
+                                <div class="direction n">N</div>
+                                <div class="direction e">E</div>
+                                <div class="direction s">S</div>
+                                <div class="direction w">W</div>
+                                <div class="direction ne">NE</div>
+                                <div class="direction se">SE</div>
+                                <div class="direction sw">SW</div>
+                                <div class="direction nw">NW</div>
+                            </div>
+                        </div>
+                        <div class="compass-inner"></div>
+                        <div id="compassNeedle" class="compass-needle"></div>
                     </div>
-                  </div>
+                    <div id="headingDisplay" class="heading-display">0°</div>
+                </div>
+                <div class="info" id="info">
+                    On mobile devices, please allow access to device orientation. <br>
+                    On desktop, move your mouse to control the compass.
+                </div>
                   
     
   
@@ -2123,130 +2122,8 @@
  
 
 
-    <!-- <section class="py-16 px-4">
-        
-        <div class="container mx-auto text-center" style="max-width: 1200px;">
-            <h2 class="text-4xl font-bold mb-4 text-primary">Our Spiritual Services</h2>
-            <p class="text-lg mb-12 max-w-3xl mx-auto">Discover the perfect balance in your life with our comprehensive spiritual guidance services, tailored to your unique needs.</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-                <div class="card-3d bg-white rounded-xl overflow-hidden shadow-lg">
-                    <div class="h-48 bg-accent relative overflow-hidden">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <i class="fas fa-home text-8xl text-white opacity-70"></i>
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 -to-t from-white p-4">
-                            <h3 class="text-2xl font-bold text-primary">Vaastu Shastra</h3>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <p class="mb-4">Ancient architectural science to harmonize living spaces with nature's five elements for prosperity and wellbeing.</p>
-                        <ul class="text-left mb-6 space-y-2">
-                            <li><i class="fas fa-check text-accent mr-2"></i> Residential Vaastu</li>
-                            <li><i class="fas fa-check text-accent mr-2"></i> Commercial Vaastu</li>
-                            <li><i class="fas fa-check text-accent mr-2"></i> Industrial Vaastu</li>
-                        </ul>
-                        <a href="astro.html" class="btn-primary px-6 py-2 rounded-full inline-block text-sm font-semibold">Learn More</a>
-                    </div>
-                </div>
-                
-               
-                <div class="card-3d bg-white rounded-xl overflow-hidden shadow-lg">
-                    <div class="h-48 bg-primary relative overflow-hidden">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <i class="fas fa-sort-numeric-up text-8xl text-white opacity-70"></i>
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 -to-t from-white p-4">
-                            <h3 class="text-2xl font-bold text-primary" style="color: #ff0000;">Numerology</h3>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <p class="mb-4">Discover the mystical relationship between numbers and events in your life to reveal your true potential.</p>
-                        <ul class="text-left mb-6 space-y-2">
-                            <li><i class="fas fa-check text-accent mr-2"></i> Name Correction</li>
-                            <li><i class="fas fa-check text-accent mr-2"></i> Lucky Numbers</li>
-                            <li><i class="fas fa-check text-accent mr-2"></i> Life Path Analysis</li>
-                        </ul>
-                        <a href="numerology.html" class="btn-primary px-6 py-2 rounded-full inline-block text-sm font-semibold">Learn More</a>
-                    </div>
-                </div>
-                
-               
-                <div class="card-3d bg-white rounded-xl overflow-hidden shadow-lg">
-                    <div class="h-48 bg-deep-red relative overflow-hidden">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <i class="fas fa-star text-8xl text-white opacity-70"></i>
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 -to-t from-white p-4">
-                            <h3 class="text-2xl font-bold text-primary">Astrology</h3>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <p class="mb-4">Ancient wisdom that studies celestial bodies' movements and their influence on human lives and behavior.</p>
-                        <ul class="text-left mb-6 space-y-2">
-                            <li><i class="fas fa-check text-accent mr-2"></i> Kundli Analysis</li>
-                            <li><i class="fas fa-check text-accent mr-2"></i> Horoscope Reading</li>
-                            <li><i class="fas fa-check text-accent mr-2"></i> Remedial Solutions</li>
-                        </ul>
-                        <a href="astrology pre.html" class="btn-primary px-6 py-2 rounded-full inline-block text-sm font-semibold">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
     
 
-    <!-- <div class="card-grid">
-        <div class="card">
-          <div class="card-icon"><i class="fa fa-child"></i></div>
-          <h4>Birth Journal</h4>
-          <p>There are many variations of passages of Lorem Ipsum available</p>
-          <a href="#">READ MORE</a>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fa fa-compass"></i></div>
-          <h4>Vastu Shastra</h4>
-          <p>There are many variations of passages of Lorem Ipsum available</p>
-          <a href="#">READ MORE</a>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fa fa-user-circle"></i></div>
-          <h4>Face Reading</h4>
-          <p>There are many variations of passages of Lorem Ipsum available</p>
-          <a href="#">READ MORE</a>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fa fa-book"></i></div>
-          <h4>Lal Kitab</h4>
-          <p>There are many variations of passages of Lorem Ipsum available</p>
-          <a href="#">READ MORE</a>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fa fa-circle-o"></i></div>
-          <h4>Crystal Ball</h4>
-          <p>There are many variations of passages of Lorem Ipsum available</p>
-          <a href="#">READ MORE</a>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fa fa-sun-o"></i></div>
-          <h4>Kundli Dosh</h4>
-          <p>There are many variations of passages of Lorem Ipsum available</p>
-          <a href="#">READ MORE</a>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fa fa-heart"></i></div>
-          <h4>Matrimony</h4>
-          <p>There are many variations of passages of Lorem Ipsum available</p>
-          <a href="#">READ MORE</a>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fa fa-calendar"></i></div>
-          <h4>Year Analysis</h4>
-          <p>There are many variations of passages of Lorem Ipsum available</p>
-          <a href="#">READ MORE</a>
-        </div>
-      </div> -->
 
     <div class="section-divider"></div>
 
@@ -3809,108 +3686,149 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 </script>
 
+
+
 <script>
-    const compassImg = document.getElementById('compass');
-    const headingValue = document.getElementById('headingValue');
-
-    function handleOrientation(event) {
-      // Try to get heading from webkitCompassHeading (iOS)
-      let heading;
-      if (event.webkitCompassHeading !== undefined) {
-        heading = event.webkitCompassHeading;
-      } else if (event.alpha !== null) {
-        // Android: alpha is 0 when device facing north
-        heading = 360 - event.alpha;
-      } else {
-        heading = 0;
-      }
-      // Normalize heading
-      if (heading < 0) heading += 360;
-      heading = heading % 360;
-
-      // Rotate the compass image (negative for correct direction)
-      compassImg.style.transform = `rotate(${-heading}deg)`;
-
-      // Show heading value
-      headingValue.textContent = `Heading: ${heading.toFixed(0)}°`;
+    // Create degree markings and numbers
+    const degreeNumbers = document.getElementById('degreeNumbers');
+    for (let i = 0; i < 360; i += 10) {
+        if (i % 30 === 0) {
+            const degreeNumber = document.createElement('div');
+            degreeNumber.className = 'degree-number';
+            degreeNumber.textContent = i === 0 ? '0' : i;
+            degreeNumber.style.transform = `rotate(${i}deg) translate(0, -150px)`;
+            degreeNumbers.appendChild(degreeNumber);
+        }
     }
 
-    // Request permission for iOS 13+ devices
-    function requestPermission() {
-      if (
-        typeof DeviceOrientationEvent !== 'undefined' &&
-        typeof DeviceOrientationEvent.requestPermission === 'function'
-      ) {
-        DeviceOrientationEvent.requestPermission()
-          .then(permissionState => {
-            if (permissionState === 'granted') {
-              window.addEventListener('deviceorientation', handleOrientation, true);
+    // Create compass rays
+    const compassRays = document.getElementById('compassRays');
+    for (let i = 0; i < 360; i += 30) {
+        const ray = document.createElement('div');
+        ray.className = 'ray';
+        ray.style.transform = `rotate(${i}deg)`;
+        compassRays.appendChild(ray);
+    }
+
+    const compassDial = document.getElementById('compassDial');
+    const compassNeedle = document.getElementById('compassNeedle');
+    const headingDisplay = document.getElementById('headingDisplay');
+    const infoDisplay = document.getElementById('info');
+
+    let currentHeading = 0;
+    let hasDeviceOrientation = false;
+
+    // Function to update the compass
+    function updateCompass(heading) {
+        // Normalize the heading to be between 0 and 360
+        heading = ((heading % 360) + 360) % 360;
+
+        // Rotate only the needle
+        compassNeedle.style.transform = `rotate(${heading}deg)`;
+        headingDisplay.textContent = `${Math.round(heading)}°`;
+
+        // Update the cardinal direction label based on heading
+        const directions = [
+            { angle: 0, label: 'N' },
+            { angle: 45, label: 'NE' },
+            { angle: 90, label: 'E' },
+            { angle: 135, label: 'SE' },
+            { angle: 180, label: 'S' },
+            { angle: 225, label: 'SW' },
+            { angle: 270, label: 'W' },
+            { angle: 315, label: 'NW' }
+        ];
+        let closestDirection = directions.reduce((prev, curr) =>
+            Math.abs(curr.angle - heading) < Math.abs(prev.angle - heading) ? curr : prev
+        );
+        headingDisplay.textContent = `${Math.round(heading)}° (${closestDirection.label})`;
+
+        currentHeading = heading;
+    }
+
+    // Mouse handler for desktop
+    function handleMouseMove(event) {
+        if (hasDeviceOrientation) return;
+
+        const compassContainer = document.querySelector('.compass-container');
+        const rect = compassContainer.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+
+        const mouseX = event.clientX - centerX;
+        const mouseY = event.clientY - centerY;
+
+        // Calculate the angle in degrees
+        let angle = Math.atan2(mouseY, mouseX) * 180 / Math.PI;
+
+        // Convert to compass heading (0 = North, clockwise)
+        angle = (90 - angle) % 360;
+        if (angle < 0) angle += 360;
+
+        updateCompass(angle);
+    }
+
+    // Device orientation handler for mobile
+    function handleDeviceOrientation(event) {
+        hasDeviceOrientation = true;
+        infoDisplay.textContent = "Using device orientation";
+
+        let heading;
+        if (event.webkitCompassHeading !== undefined) {
+            // iOS devices
+            heading = event.webkitCompassHeading;
+        } else if (event.alpha !== null) {
+            // Android and other devices
+            heading = event.alpha;
+        } else {
+            infoDisplay.textContent = "Cannot access compass data";
+            return;
+        }
+
+        updateCompass(heading);
+    }
+
+    // Function to request device orientation permission (for iOS 13+)
+    function requestDeviceOrientationPermission() {
+        if (typeof DeviceOrientationEvent !== 'undefined' && 
+            typeof DeviceOrientationEvent.requestPermission === 'function') {
+            DeviceOrientationEvent.requestPermission()
+                .then(response => {
+                    if (response === 'granted') {
+                        window.addEventListener('deviceorientation', handleDeviceOrientation, true);
+                        infoDisplay.textContent = "Device orientation permission granted";
+                    } else {
+                        infoDisplay.textContent = "Device orientation permission denied. Using mouse control.";
+                    }
+                })
+                .catch(error => {
+                    infoDisplay.textContent = "Error requesting permission: " + error;
+                });
+        } else {
+            window.addEventListener('deviceorientation', handleDeviceOrientation, true);
+        }
+    }
+
+    // Initialize the compass
+    document.addEventListener('DOMContentLoaded', () => {
+        if (window.DeviceOrientationEvent) {
+            if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+                const permissionButton = document.createElement('button');
+                permissionButton.textContent = "Enable Compass";
+                permissionButton.addEventListener('click', requestDeviceOrientationPermission);
+                infoDisplay.appendChild(document.createElement('br'));
+                infoDisplay.appendChild(permissionButton);
             } else {
-              headingValue.textContent = 'Permission denied for compass.';
+                window.addEventListener('deviceorientation', handleDeviceOrientation, true);
             }
-          })
-          .catch(() => {
-            headingValue.textContent = 'Compass permission error.';
-          });
-      } else {
-        // Non-iOS devices
-        window.addEventListener('deviceorientation', handleOrientation, true);
-      }
-    }
+        } else {
+            infoDisplay.textContent = "Device orientation not supported. Using mouse control.";
+        }
 
-    // Start on user interaction for iOS
-    window.addEventListener('click', requestPermission, { once: true });
-    window.addEventListener('touchstart', requestPermission, { once: true });
-    // For non-iOS, try auto-start
-    requestPermission();
-  </script>
-
-
-<script>
-
-function updateCompass(alpha) {
-    const compass = document.getElementById('compass');
-    const direction = document.getElementById('direction');
-    // iOS uses webkitCompassHeading (clockwise from North)
-    // Android uses alpha (counterclockwise from North)
-    compass.style.transform = 'rotate(' + (-alpha) + 'deg)';
-    direction.textContent = 'Direction: ' + Math.round(alpha) + '°';
-  }
-  
-  function handleOrientation(event) {
-    let alpha;
-    if (event.webkitCompassHeading) {
-      // iOS
-      alpha = event.webkitCompassHeading;
-    } else if (typeof event.alpha === 'number') {
-      // Android and others
-      alpha = 360 - event.alpha; // Adjust for compass direction
-    } else {
-      alpha = 0;
-    }
-    updateCompass(alpha);
-  }
-  
-  // iOS 13+ requires permission
-  function initCompass() {
-    if (typeof DeviceOrientationEvent !== 'undefined' &&
-        typeof DeviceOrientationEvent.requestPermission === 'function') {
-      DeviceOrientationEvent.requestPermission()
-        .then(permissionState => {
-          if (permissionState === 'granted') {
-            window.addEventListener('deviceorientation', handleOrientation, true);
-          } else {
-            alert('Compass permission denied.');
-          }
-        })
-        .catch(console.error);
-    } else {
-      window.addEventListener('deviceorientation', handleOrientation, true);
-    }
-  }
-  
-  window.onload = initCompass;
-  </script>
+        // Set up mouse movement as fallback
+        document.addEventListener('mousemove', handleMouseMove);
+    });
+</script>
 
 </body>
 </html>
